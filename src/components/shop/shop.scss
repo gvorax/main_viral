@@ -1,0 +1,150 @@
+.shop {
+  width: 100%;
+  background-image: url("../../assets/shoBg.png");
+  background-size: cover;
+  padding-bottom: 158px;
+  h2 {
+    padding-top: 155px;
+    color: #222;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 73.6px;
+  }
+  span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 55px;
+  }
+
+  .mtSwiper {
+    position: relative;
+    height: 880px;
+
+    .swiper {
+      width: 95%;
+      height: 880px;
+      padding: 0 100px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 64px;
+      height: 64px;
+      border: none;
+      border-radius: 50px;
+      background: #f5a93f;
+      color: white;
+      padding: 16px !important;
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      position: absolute;
+      font-size: 32px;
+      margin: 16px !important;
+    }
+
+
+    .swiper-slide {
+      width: 450px !important;
+      margin: 0 25px;
+      padding-bottom: 57px;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0px 0px 25px 8px rgba(19, 187, 234, 0.15);
+
+      /* Center slide text vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h5 {
+        color: #222;
+        text-align: center;
+        font-family: Playfair Display;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 141.4px;
+        padding-top: 6px;
+      }
+
+      p {
+        width: 80%;
+        color: #666;
+        text-align: center;
+        font-family: PT Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px;
+      }
+      span {
+        color: #f5a93f;
+        text-align: center;
+        font-family: Playfair Display;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 41.4px;
+        margin-bottom: 40px;
+
+      }
+
+      button {
+        transition: 0.2s all ease-in-out ;
+
+        padding: 17px 70px;
+        color: #000;
+        text-align: center;
+        font-family: PT Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 27.6px;
+        border-radius: 30px;
+        border: 2px solid #13bbea;
+        background: #fff;
+
+        svg {
+            transition: 0.2s all ease-in-out;
+          margin-right: 5px !important;
+        }
+      }
+
+      &:hover{
+        cursor: pointer;
+        img{
+            opacity: 0.5;
+        }
+
+        button{
+            background: #F5A93F;
+            border-color: #F5A93F;
+            color: #fff;
+
+            svg path{
+                fill: #fff;
+            }
+        }
+      }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      transition: 0.2s all ease-in-out ;
+
+    }
+  }
+}
