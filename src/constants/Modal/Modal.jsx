@@ -1,9 +1,9 @@
 import React from 'react';
 import './modal.scss'
 
-const Modal = ({selModal}) => {
+const Modal = ({setModal}) => {
   return (
-    <div className='modal' onClick={()=>selModal(false)}>
+    <div className='modal' onClick={()=>setModal(false)}>
       <div className="connect" onClick={(e) => e.stopPropagation()}>
         <h3> <span></span> Bog'lanish</h3>
         <h2>Biz siz bilan albatta bog'lanamiz</h2>
