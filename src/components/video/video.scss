@@ -52,10 +52,11 @@
     }
 
     .video_water {
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 100px;
+      // gap: 100px;
 
       .water_item {
         display: flex;
@@ -89,7 +90,7 @@
               position: absolute;
               top: 20%;
               right: -60%;
-              z-index:1;
+              z-index:0;
         }
       }
     }
