@@ -11,7 +11,7 @@ import Video from "../video/Video";
 import Contact from "../contact/Contact";
 import Footer from "../footer/Footer";
 
-const Main = () => {
+const Main = ({ setModal }) => {
   return (
     <div className="main">
       <div className="bg_video">
@@ -43,7 +43,7 @@ const Main = () => {
           </div>
           <h1>Toza & Shifobaxsh Ichimlik suvi</h1>
           <div className="main_btns">
-            <Button title="Buyurtma berish" />
+            <Button title="Buyurtma berish" setModal={setModal} />
             <Button title="Bepul maslahat" color={"colored"} />
           </div>
         </div>
@@ -51,10 +51,10 @@ const Main = () => {
       <About />
       <Promotion />
       <Shop />
-      <Delivery />
+      <Delivery setModal={setModal}/>
       <Video />
-      <Contact/>
-      <Footer/>
+      <Contact />
+      <Footer />
     </div>
   );
 };

@@ -11,7 +11,7 @@ import Del3 from "../../assets/del3.png";
 import Damas from "../../assets/damas.png";
 import "./Delivery.scss";
 
-const Delivery = () => {
+const Delivery = ({setModal}) => {
   return (
     <div className="delivery">
       <div className="del_box">
@@ -65,7 +65,7 @@ const Delivery = () => {
               <p>Ostonagacha yetkazish</p>
             </div>
           </div>
-          <button>
+          <button onClick={()=>setModal(true)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
