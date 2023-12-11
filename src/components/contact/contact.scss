@@ -31,6 +31,9 @@
     gap: 20px;
 
     .info_day {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
       .building {
         width: 410px;
         height: 270px;
