@@ -9,9 +9,9 @@ import "swiper/css/pagination";
 
 const About = () => {
   return (
-    <div className="about">
-      <h2>Biz haqimizda</h2>
-      <span>
+    <div className="about" id="about">
+      <h2 data-aos="fade-up">Biz haqimizda</h2>
+      <span data-aos="fade-up">
         <svg
           width="46"
           height="12"
@@ -27,13 +27,13 @@ const About = () => {
           />
         </svg>
       </span>
-      <p>
+      <p data-aos="fade-up">
         Vital kompaniyasi sizning va yaqinlaringizning sog'lig'i haqida
         qayg'uradi va iliq suv bilan ishlaydigan kulerlarni taklif etadi va iliq
         suv bilan ishlaydigan kulerlarni taklif etadiva iliq suv bilan
         ishlaydigan kulerlarni taklif etadi. Vital – Hayot ekologiyasi.
       </p>
-      <div className="subLink">
+      <div className="subLink" data-aos="fade-up">
         <h3 className="link">Ko'proq o'qish</h3>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -54,6 +54,7 @@ const About = () => {
       </div>
 
       <Swiper
+      data-aos="fade-up"
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}

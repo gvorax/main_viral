@@ -13,7 +13,7 @@ import Footer from "../footer/Footer";
 
 const Main = ({ setModal, setModal1 }) => {
   return (
-    <div className="main">
+    <div className="main" id="home">
       <div className="bg_video">
         {/* video for background width fullscreen and it is located background */}
         <video className="bg_video-content" autoPlay muted loop>
@@ -24,7 +24,7 @@ const Main = ({ setModal, setModal1 }) => {
       <Navbar />
       <div className="main_content">
         <div className="container">
-          <div className="main_content-text">
+          <div className="main_content-text" data-aos="fade-down">
             <svg
               width="44"
               height="10"
@@ -41,8 +41,8 @@ const Main = ({ setModal, setModal1 }) => {
             </svg>
             <p>Qulaylik va Sifat Uyg‘unligi</p>
           </div>
-          <h1>Toza & Shifobaxsh Ichimlik suvi</h1>
-          <div className="main_btns">
+          <h1 data-aos="fade-right">Toza & Shifobaxsh Ichimlik suvi</h1>
+          <div className="main_btns" data-aos="fade-up">
             <Button title="Buyurtma berish" setModal={setModal} />
             <Button title="Bepul maslahat" color={"colored"} setModal={setModal1}/>
           </div>

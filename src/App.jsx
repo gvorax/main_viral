@@ -1,8 +1,11 @@
 import { useState } from "react";
 import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Main from "./components/main/Main";
 import CertificateModal from "./constants/Modal/CertificateModal";
 import Modal from "./constants/Modal/Modal";
+AOS.init();
 
 function App() {
   const [modal, setModal] = useState(false);

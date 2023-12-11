@@ -1,5 +1,5 @@
 .promotion {
-  margin-top: 280px;
+  margin-top: 350px;
   .container {
     .pro_title {
       color: #222;
@@ -41,6 +41,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        animation: rotate 1s linear;
+      
 
         .box_item_img {
           max-width: 120px;
@@ -235,5 +237,13 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-10deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
   }
 }

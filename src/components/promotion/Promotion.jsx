@@ -6,17 +6,17 @@ import Image3 from "../../assets/image3.png";
 import Image4 from "../../assets/image4.png";
 import Image5 from "../../assets/image5.png";
 import drop from "../../assets/drop.png";
-import VitalWater from '../../assets/vitalWater.png'
+import VitalWater from "../../assets/vitalWater.png";
 
 const Promotion = () => {
   return (
-    <div className="promotion">
+    <div className="promotion" id="promotion">
       <div className="container">
-        <h2 className="pro_title">
+        <h2 className="pro_title" data-aos="fade-up">
           Siz va Yaqinlarigiz Uchun{" "}
           <span className="subTitle"> Munosib Suv</span>
         </h2>
-        <span>
+        <span data-aos="fade-up">
           <svg
             width="46"
             height="12"
@@ -33,7 +33,7 @@ const Promotion = () => {
           </svg>
         </span>
         <div className="promotion_box">
-          <div className="box_item">
+          <div className="box_item" data-aos="fade-right" data-aos-delay="200">
             <div className="box_item_img">
               <img src={Image1} alt="" />
             </div>
@@ -59,7 +59,7 @@ const Promotion = () => {
               />
             </svg>
           </div>
-          <div className="box_item">
+          <div className="box_item" data-aos="fade-right" data-aos-delay="400">
             <div className="box_item_img">
               <img src={Image2} alt="" />
             </div>
@@ -85,7 +85,7 @@ const Promotion = () => {
               />
             </svg>
           </div>
-          <div className="box_item">
+          <div className="box_item" data-aos="fade-right" data-aos-delay="600">
             <div className="box_item_img">
               <img src={Image3} alt="" />
             </div>
@@ -111,7 +111,7 @@ const Promotion = () => {
               />
             </svg>
           </div>
-          <div className="box_item">
+          <div className="box_item" data-aos="fade-right" data-aos-delay="800">
             <div className="box_item_img">
               <img src={Image4} alt="" />
             </div>
@@ -137,7 +137,7 @@ const Promotion = () => {
               />
             </svg>
           </div>
-          <div className="box_item">
+          <div className="box_item" data-aos="fade-right" data-aos-delay="1000">
             <div className="box_item_img">
               <img src={Image5} alt="" />
             </div>
@@ -151,7 +151,7 @@ const Promotion = () => {
         </div>
 
         <div className="water">
-          <div className="water_title">
+          <div className="water_title" data-aos="fade-right">
             <h2>Suvning tarkibi</h2>
             <span>
               <svg
@@ -170,8 +170,8 @@ const Promotion = () => {
               </svg>
             </span>
           </div>
-          <span className="line_blue"></span>
-          <p>
+          <span className="line_blue" data-aos="fade-right"></span>
+          <p data-aos="fade-right">
             Mijozlarning hayoti haqida o'ylaymiz shuning uchun biz suvga xlor
             qo‘shmaymiz, chunki xlor sog'lig'imizga jiddiy zarar yetkazadi.
           </p>
@@ -179,7 +179,7 @@ const Promotion = () => {
 
         <div className="water_property">
           <div className="property1">
-            <div className="proBox">
+            <div className="proBox" data-aos="fade-left" data-aos-delay="">
               <h3>Sulfat</h3>
               <h4>7-12 mg/L</h4>
               <p>
@@ -191,18 +191,19 @@ const Promotion = () => {
                 <img src={drop} alt="" />
               </div>
             </div>
-            <div className="proBox">
+            <div className="proBox" data-aos="fade-left" data-aos-delay="400">
               <h3>Bikorbanat</h3>
               <h4>25-70 mg/L</h4>
               <p>
                 {" "}
-                <span></span> Bikarbonat antasid bo'lib, oshqozon ekşimesi va kislotali ovqat hazm qilishni bartaraf etish uchun ishlatiladi.
+                <span></span> Bikarbonat antasid bo'lib, oshqozon ekşimesi va
+                kislotali ovqat hazm qilishni bartaraf etish uchun ishlatiladi.
               </p>
               <div className="pro_img">
                 <img src={drop} alt="" />
               </div>
             </div>
-            <div className="proBox">
+            <div className="proBox" data-aos="fade-left" data-aos-delay="800">
               <h3>Sulfat</h3>
               <h4>7-12 mg/L</h4>
               <p>
@@ -219,7 +220,7 @@ const Promotion = () => {
             <img src={VitalWater} alt="" />
           </div>
           <div className="property1 property3">
-          <div className="proBox">
+            <div className="proBox" data-aos="fade-right" data-aos-delay="200">
               <h3>Sulfat</h3>
               <h4>7-12 mg/L</h4>
               <p>
@@ -231,18 +232,19 @@ const Promotion = () => {
                 <img src={drop} alt="" />
               </div>
             </div>
-            <div className="proBox">
+            <div className="proBox" data-aos="fade-right" data-aos-delay="600">
               <h3>Bikorbanat</h3>
               <h4>25-70 mg/L</h4>
               <p>
                 {" "}
-                <span></span> Bikarbonat antasid bo'lib, oshqozon ekşimesi va kislotali ovqat hazm qilishni bartaraf etish uchun ishlatiladi.
+                <span></span> Bikarbonat antasid bo'lib, oshqozon ekşimesi va
+                kislotali ovqat hazm qilishni bartaraf etish uchun ishlatiladi.
               </p>
               <div className="pro_img">
                 <img src={drop} alt="" />
               </div>
             </div>
-            <div className="proBox">
+            <div className="proBox" data-aos="fade-right" data-aos-delay="1000">
               <h3>Sulfat</h3>
               <h4>7-12 mg/L</h4>
               <p>

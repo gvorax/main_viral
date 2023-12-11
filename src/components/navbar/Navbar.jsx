@@ -4,6 +4,7 @@ import PhoneIcon from "../../assets/phone_icon.png";
 import English from "../../assets/eng.png";
 import Russian from "../../assets/rus.png";
 import Uzbek from "../../assets/uzb.png";
+import { Link } from "react-scroll";
 import "./navbar.scss";
 
 const Navbar = () => {
@@ -11,10 +12,10 @@ const Navbar = () => {
     <div className="container">
       <div className="navbar">
         <div className="navbar_logo">
-          <div className="logo_box">
+          <div className="logo_box" data-aos="fade-right">
             <img src={Image} alt="logo" />
           </div>
-          <div className="logo_contact">
+          <div className="logo_contact" data-aos="fade-right">
             <div className="logo_img_box">
               <img src={PhoneIcon} alt="" />
             </div>
@@ -25,32 +26,32 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="nav_item">
+        <div className="nav_item" data-aos="fade-down">
           <nav>
             <ul>
               <li>
-                <a href="#">HOME</a>
+                <Link to="home">HOME</Link>
                 <span></span>
               </li>
               <li>
-                <a href="#">BIZ HAQIMIZDA</a>
+                <Link to="about">BIZ HAQIMIZDA</Link>
                 <span></span>
               </li>
               <li>
-                <a href="#">MAXSULOTLAR</a>
+                <Link to="shop">MAXSULOTLAR</Link>
                 <span></span>
               </li>
               <li>
-                <a href="#">XIZMATLAR</a>
+                <Link to="delivery">XIZMATLAR</Link>
                 <span></span>
               </li>
               <li>
-                <a href="#">BOG'LANISH</a>
+                <Link to="contact">BOG'LANISH</Link>
                 <span></span>
               </li>
             </ul>
           </nav>
-          <div className="nav_lan">
+          <div className="nav_lan" data-aos="fade-left">
             <div className="search_box">
               <div className="search">
                 <svg

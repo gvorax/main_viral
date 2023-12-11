@@ -13,9 +13,9 @@ import "./Delivery.scss";
 
 const Delivery = ({setModal}) => {
   return (
-    <div className="delivery">
-      <div className="del_box">
-        <div className="del_img">
+    <div className="delivery" id="delivery" >
+      <div className="del_box" data-aos="zoom-in" data-aos-delay="0">
+        <div className="del_img" data-aos="zoom-in" data-aos-delay="200">
           <div className="bot_box">
             <div className="box_img1">
               <img src={Bot1} alt="" />
@@ -34,38 +34,38 @@ const Delivery = ({setModal}) => {
             </div>
           </div>
         </div>
-        <div className="del_text">
-          <h3>
+        <div className="del_text" >
+          <h3 data-aos="fade-right"  data-aos-delay="400">
             Yetkazib berish <span> xizmati</span>
           </h3>
-          <p>
+          <p data-aos="fade-right"  data-aos-delay="600">
             Suv yetkazib berish xizmatimiz bilan to'g'ridan-to'g'ri
             eshigingizgacha yetkazib beramiz.
           </p>
           <div className="del_items">
             <div className="del_item">
-              <div className="item_img">
+              <div className="item_img" data-aos="fade-right"  data-aos-delay="800">
                 <img src={Del3} alt="" />
               </div>
-              <span></span>
-              <p>Bepul yetkazib berish</p>
+              <span data-aos="fade-right"  data-aos-delay="900"></span>
+              <p data-aos="fade-right"  data-aos-delay="1000">Bepul yetkazib berish</p>
             </div>
             <div className="del_item">
-              <div className="item_img">
+              <div className="item_img" data-aos="fade-right"  data-aos-delay="1100">
                 <img src={Del2} alt="" />
               </div>
-              <span></span>
-              <p>24/7 Istalgan vaqtda</p>
+              <span data-aos="fade-right"  data-aos-delay="1200"></span>
+              <p data-aos="fade-right"  data-aos-delay="1300">24/7 Istalgan vaqtda</p>
             </div>
             <div className="del_item">
-              <div className="item_img">
+              <div className="item_img" data-aos="fade-right"  data-aos-delay="1400">
                 <img src={Del1} alt="" />
               </div>
-              <span></span>
-              <p>Ostonagacha yetkazish</p>
+              <span data-aos="fade-right"  data-aos-delay="1500"></span>
+              <p data-aos="fade-right"  data-aos-delay="1600">Ostonagacha yetkazish</p>
             </div>
           </div>
-          <button onClick={()=>setModal(true)}>
+          <button onClick={()=>setModal(true)} data-aos="fade-up"  data-aos-delay="1700">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

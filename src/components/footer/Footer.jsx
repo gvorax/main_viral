@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./footer.scss";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="top_button">
-        <a href="#">
+        <Link to="home">
           <svg
             width="64"
             height="64"
@@ -35,7 +36,7 @@ const Footer = () => {
               </clipPath>
             </defs>
           </svg>
-        </a>
+        </Link>
       </div>
 
       <div className="footer_bg">

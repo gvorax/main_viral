@@ -4,13 +4,13 @@ import "./video.scss";
 
 const Video = () => {
   return (
-    <div className="video">
+    <div className="video" id="video">
       <div className="video_box">
         <div className="video_title">
-          <h2>
+          <h2  data-aos="zoom-in"  data-aos-delay='0'>
             Vital Suvlariga <span> Zam Zam </span> Qo'shilishini Bilarmidingiz?
           </h2>
-          <div className="video_text">
+          <div className="video_text"  data-aos="fade-left"  data-aos-delay='300'>
             <p>
               Vital qadoqlangan tabiiy suvi muqaddas Zam Zam bulog‘idan suv
               qo‘shilishi bilan tayyorlanadi.{" "}
@@ -37,7 +37,7 @@ const Video = () => {
           </div>
         </div>
         <div className="video_water">
-          <div className="water_item">
+          <div className="water_item" data-aos="zoom-out" data-aos-delay="400">
             <div className="item_box">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ const Video = () => {
               </svg>
             </div>
           </div>
-          <div className="water_item">
+          <div className="water_item" data-aos="zoom-out" data-aos-delay="600">
             <div className="item_box">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -175,7 +175,7 @@ const Video = () => {
               </svg>
             </div>
           </div>
-          <div className="water_item">
+          <div className="water_item" data-aos="zoom-out" data-aos-delay="800">
             <div className="item_box">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -242,7 +242,7 @@ const Video = () => {
               </svg>
             </div>
           </div>
-          <div className="water_item">
+          <div className="water_item" data-aos="zoom-out" data-aos-delay="1000">
             <div className="item_box">
               <img src={Change} alt="" />
             </div>
@@ -266,7 +266,7 @@ const Video = () => {
               </svg>
             </div>
           </div>
-          <div className="water_item">
+          <div className="water_item" data-aos="zoom-out" data-aos-delay="1200">
             <div className="item_box">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

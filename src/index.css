@@ -32,3 +32,6 @@
   background: #13BBEA;
   border-radius: 10px;
 }
+html {
+  scroll-behavior: smooth;
+}
