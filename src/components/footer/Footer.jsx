@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import "./footer.scss";
 
-const Footer = () => {
+const Footer = ({ setModal }) => {
   return (
     <div className="footer">
       <div className="top_button">
@@ -46,24 +46,24 @@ const Footer = () => {
       </div>
 
       <div className="footer_info">
-        <button>Bog'lanish</button>
+        <button onClick={() => setModal(true)}>Bog'lanish</button>
 
         <div className="navlinks">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link to="home">Home</Link>
             </li>
             <li>
-              <a href="#">Biz Haqimizda </a>
+              <Link to="about">Biz Haqimizda </Link>
             </li>
             <li>
-              <a href="#">Maxsulotlar</a>
+              <Link to="shop">Maxsulotlar</Link>
             </li>
             <li>
-              <a href="#">Xizmatlar</a>
+              <Link to="delivery">Xizmatlar</Link>
             </li>
             <li>
-              <a href="#">Bog'lanish</a>
+              <Link to="contact">Bog'lanish</Link>
             </li>
           </ul>
         </div>

@@ -50,11 +50,11 @@ const Main = ({ setModal, setModal1 }) => {
       </div>
       <About />
       <Promotion />
-      <Shop />
+      <Shop  setModal={setModal}/>
       <Delivery setModal={setModal}/>
       <Video />
       <Contact />
-      <Footer />
+      <Footer  setModal={setModal}/>
     </div>
   );
 };

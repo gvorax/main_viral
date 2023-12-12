@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./promotion.scss";
 import Image1 from "../../assets/tasdiw.png";
 import Image2 from "../../assets/image2.png";
@@ -9,6 +9,11 @@ import drop from "../../assets/drop.png";
 import VitalWater from "../../assets/vitalWater.png";
 
 const Promotion = () => {
+  const [more1, setmore1] = useState(false)
+  const [more2, setmore2] = useState(false)
+  const [more3, setmore3] = useState(false)
+  const [more4, setmore4] = useState(false)
+  const [more5, setmore5] = useState(false)
   return (
     <div className="promotion" id="promotion">
       <div className="container">
@@ -41,8 +46,9 @@ const Promotion = () => {
             <p>
               Suvning hayotimizdagi ahamiyati tufayli biz mijozlarimizga 99,99%
               toza suv beramiz.
+             {more1 && <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, qui.</span>}
             </p>
-            <span className="link underline">Ko‘proq o‘qish</span>
+            <span className="link underline" onClick={()=>setmore1(!more1)}>Ko‘proq o‘qish</span>
           </div>
           <div className="box_item_wave">
             <svg
@@ -67,8 +73,9 @@ const Promotion = () => {
             <p>
               Suv turli xil bakteriyalarga ega. 5 bosqichli filtrlash esa
               suvning barcha bakteriyalardan xalos qiladi.
+              {more2 && <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, qui.</span>}
             </p>
-            <span className="link underline">Ko‘proq o‘qish</span>
+            <span className="link underline" onClick={()=>setmore2(!more2)}>Ko‘proq o‘qish</span>
           </div>
           <div className="box_item_wave">
             <svg
@@ -93,8 +100,9 @@ const Promotion = () => {
             <p>
               Mijozlarning hayoti haqida o'ylaymiz shuning uchun biz suvga past
               miqdorda tuz qo‘shamiz, chunki tuz sog'lig'imizga zarar yetkazadi.
+              {more3 && <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, qui.</span>}
             </p>
-            <span className="link underline">Ko‘proq o‘qish</span>
+            <span className="link underline" onClick={()=>setmore3(!more3)}>Ko‘proq o‘qish</span>
           </div>
           <div className="box_item_wave">
             <svg
@@ -119,8 +127,9 @@ const Promotion = () => {
             <p>
               Ishlab chiqarish va qadoqlash jarayonlari to'la
               avtomatlashtirilgan va har qanday inson aralashuvidan himoyalangan
+              {more4 && <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, qui.</span>}
             </p>
-            <span className="link underline">Ko‘proq o‘qish</span>
+            <span className="link underline" onClick={()=>setmore4(!more4)}>Ko‘proq o‘qish</span>
           </div>
           <div className="box_item_wave">
             <svg
@@ -145,8 +154,9 @@ const Promotion = () => {
             <p>
               Bizning suv kapsulalarimiz 15 bosqichli tozalash jarayonidan
               o‘tadi va mijozlarga toza holatda yetkazildi.
+              {more5 && <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, qui.</span>}
             </p>
-            <span className="link underline">Ko‘proq o‘qish</span>
+            <span className="link underline" onClick={()=>setmore5(!more5)}>Ko‘proq o‘qish</span>
           </div>
         </div>
 

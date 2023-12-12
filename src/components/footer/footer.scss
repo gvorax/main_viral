@@ -70,6 +70,12 @@
       cursor: pointer;
       outline: none;
       border: none;
+      transition: 0.5s all ease-in-out;
+
+      &:hover {
+        background: #13bbea;
+        color: #fff;
+      }
     }
 
     .navlinks {
@@ -78,7 +84,9 @@
         text-align: center;
 
         li {
-          padding: 12px 0;
+          padding: 12px 20px;
+          transition: 0.2s all ease-in-out;
+          cursor: pointer;
 
           a {
             text-decoration: none;
@@ -88,6 +96,12 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+          }
+
+          &:hover {
+            background-color: rgba($color: #fff, $alpha: 0.3);
+            border: none;
+            border-radius: 5px;
           }
         }
       }
@@ -153,22 +167,20 @@
   }
 }
 
-
 @keyframes wave {
-    0%{
-        background-position-x: 0;
-    }
-    25%{
-        background-position-x: -40px;
-    }
-    50%{
-        background-position-x: 0;
-    }
-    75%{
-        background-position-x: -40px;
-    }
-    100%{
-        background-position-x: 0;
-    }
-    
+  0% {
+    background-position-x: 0;
+  }
+  25% {
+    background-position-x: -40px;
+  }
+  50% {
+    background-position-x: 0;
+  }
+  75% {
+    background-position-x: -40px;
+  }
+  100% {
+    background-position-x: 0;
+  }
 }
