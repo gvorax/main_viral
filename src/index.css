@@ -16,6 +16,8 @@
   line-height: normal;
 }
 
+/* hello */
+
 /* width */
 ::-webkit-scrollbar {
   width: 20px;
@@ -29,7 +31,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #13BBEA;
+  background: #13bbea;
   border-radius: 10px;
 }
 html {
