@@ -6,12 +6,14 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
   const [more, setMore] = React.useState(false);
+  const { t } = useTranslation();
   return (
     <div className="about" id="about">
-      <h2 data-aos="fade-up">Biz haqimizda</h2>
+      <h2 data-aos="fade-up">{t("about")}</h2>
       <span data-aos="fade-up">
         <svg
           width="46"
@@ -29,21 +31,15 @@ const About = () => {
         </svg>
       </span>
       <p data-aos="fade-up">
-        Vital kompaniyasi sizning va yaqinlaringizning sog'lig'i haqida
-        qayg'uradi va iliq suv bilan ishlaydigan kulerlarni taklif etadi va iliq
-        suv bilan ishlaydigan kulerlarni taklif etadiva iliq suv bilan
-        ishlaydigan kulerlarni taklif etadi. Vital – Hayot ekologiyasi.
+       {t("aboutText")}
         {more && (
           <span>
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            cum neque, sint, cupiditate exercitationem dolores quidem alias nisi
-            itaque nulla possimus libero aliquam eum officia.{" "}
+            {t("aboutText2")}
           </span>
         )}
       </p>
       <div className="subLink" data-aos="fade-up">
-        <h3 className="link" onClick={()=>{setMore(!more)}} > {!more ? "Ko'proq o'qish":"Qisqartirish"} </h3>
+        <h3 className="link" onClick={()=>{setMore(!more)}} > {!more ? t("more"):t("less")} </h3>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"

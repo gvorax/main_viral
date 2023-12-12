@@ -10,8 +10,10 @@ import Delivery from "../delivery/Delivery";
 import Video from "../video/Video";
 import Contact from "../contact/Contact";
 import Footer from "../footer/Footer";
+import { useTranslation } from "react-i18next";
 
 const Main = ({ setModal, setModal1 }) => {
+  const {t} = useTranslation();
   return (
     <div className="main" id="home">
       <div className="bg_video">
@@ -39,12 +41,12 @@ const Main = ({ setModal, setModal1 }) => {
                 stroke-linecap="round"
               />
             </svg>
-            <p>Qulaylik va Sifat Uyg‘unligi</p>
+            <p>{t("forComford")}</p>
           </div>
-          <h1 data-aos="fade-right">Toza & Shifobaxsh Ichimlik suvi</h1>
+          <h1 data-aos="fade-right">{t("clean")}</h1>
           <div className="main_btns" data-aos="fade-up">
-            <Button title="Buyurtma berish" setModal={setModal} />
-            <Button title="Bepul maslahat" color={"colored"} setModal={setModal1}/>
+            <Button title={`${t("order")}`} setModal={setModal} />
+            <Button title={`${t("order")}`} color={"colored"} setModal={setModal1}/>
           </div>
         </div>
       </div>

@@ -5,9 +5,19 @@ import English from "../../assets/eng.png";
 import Russian from "../../assets/rus.png";
 import Uzbek from "../../assets/uzb.png";
 import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
+import "../../i18next/i18n";
 import "./navbar.scss";
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    localStorage.setItem("language", lng);
+    location.reload();
+  };
+
   return (
     <div className="container">
       <div className="navbar">
@@ -21,8 +31,10 @@ const Navbar = () => {
             </div>
             <span></span>
             <div className="contact_text">
-              <p className="logo_title">Bog‘lanish uchun:</p>
-              <a className="logo_subtitle" href="+998998058080">+998 99 805-80-80</a>
+              <p className="logo_title">{t("forContact")}:</p>
+              <a className="logo_subtitle" href="+998998058080">
+                +998 99 805-80-80
+              </a>
             </div>
           </div>
         </div>
@@ -30,23 +42,23 @@ const Navbar = () => {
           <nav>
             <ul>
               <li>
-                <Link to="home">HOME</Link>
+                <Link to="home">{t("home")}</Link>
                 <span></span>
               </li>
               <li>
-                <Link to="about">BIZ HAQIMIZDA</Link>
+                <Link to="about">{t("about")}</Link>
                 <span></span>
               </li>
               <li>
-                <Link to="shop">MAXSULOTLAR</Link>
+                <Link to="shop"> {t("product")} </Link>
                 <span></span>
               </li>
               <li>
-                <Link to="delivery">XIZMATLAR</Link>
+                <Link to="delivery">{t("services")}</Link>
                 <span></span>
               </li>
               <li>
-                <Link to="contact">BOG'LANISH</Link>
+                <Link to="contact">{t("contact")}</Link>
                 <span></span>
               </li>
             </ul>
@@ -107,17 +119,33 @@ const Navbar = () => {
                 </svg>
               </div>
               <div className="dropdown-content">
-                <div className="flag">
+                <div
+                  className="flag"
+                  onClick={(e) => {
+                    changeLanguage("rus");
+                  }}
+                >
+                  <img src={Russian} alt="" />
+                  <a href="#">Русский</a>
+                </div>
+                <div
+                  className="flag"
+                  onClick={(e) => {
+                    changeLanguage("eng");
+                  }}
+                >
                   <img src={English} alt="" />
                   <a href="#">English</a>
                 </div>
-                <div className="flag">
+
+                <div
+                  className="flag"
+                  onClick={(e) => {
+                    changeLanguage("uz");
+                  }}
+                >
                   <img src={Uzbek} alt="" />
                   <a href="#">Uzbek</a>
-                </div>
-                <div className="flag">
-                  <img src={Russian} alt="" />
-                  <a href="#">Русский</a>
                 </div>
               </div>
             </div>
