@@ -147,7 +147,7 @@
         background: #fff;
 
         svg {
-          transition: 0.2s all ease-in-out;
+          transition: 0.2s all ease-in-out !important;
           margin-right: 5px !important;
         }
 
@@ -164,16 +164,7 @@
     }
   }
 
-  .damas{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    max-width: 445px;
-
-    img{
-        width: 100%;
-    }
-  }
+  
 }
 
 @keyframes anime1 {

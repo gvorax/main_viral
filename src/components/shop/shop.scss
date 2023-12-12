@@ -24,11 +24,12 @@
 
   .mtSwiper {
     position: relative;
-    height: 880px;
+    width: 95%;
+    margin: 0 auto;
+    height: 900px;
 
     .swiper {
-      width: 95%;
-      height: 880px;
+      width: 100%;
       padding: 0 100px;
     }
 
@@ -51,12 +52,11 @@
 
 
     .swiper-slide {
-      width: 450px !important;
-      margin: 0 25px;
+      width: 430px !important;
       padding-bottom: 57px;
       text-align: center;
+      margin: 20px;
       font-size: 18px;
-      background: #fff;
       border-radius: 10px;
       background: #fff;
       box-shadow: 0px 0px 25px 8px rgba(19, 187, 234, 0.15);

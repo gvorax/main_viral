@@ -40,7 +40,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateX(-200px) translateY(0px) rotate(-45deg);
+    transform: translateX(-190px) translateY(0px) rotate(-45deg);
     transition: all 0.5s ease-in-out;
     z-index: 1;
   }
@@ -51,13 +51,12 @@
 
   &:hover {
     div {
-      transform: translateX(-50px) translateY(-100px) rotate(-45deg);
+      transform: translateX(-80px) translateY(-100px) rotate(-45deg);
     }
     div:nth-child(2) {
       transform: translateX(100px) translateY(-100px) rotate(45deg);
     }
   }
-
   
 }
 

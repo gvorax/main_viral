@@ -8,7 +8,6 @@ import Bot5 from "../../assets/bot5.png";
 import Del1 from "../../assets/del1.png";
 import Del2 from "../../assets/del2.png";
 import Del3 from "../../assets/del3.png";
-import Damas from "../../assets/damas.png";
 import "./Delivery.scss";
 
 const Delivery = ({setModal}) => {
@@ -65,7 +64,7 @@ const Delivery = ({setModal}) => {
               <p data-aos="fade-right"  data-aos-delay="1600">Ostonagacha yetkazish</p>
             </div>
           </div>
-          <button onClick={()=>setModal(true)} data-aos="fade-up"  data-aos-delay="1700">
+          <button onClick={()=>setModal(true)} data-aos="fade-up" >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -82,9 +81,7 @@ const Delivery = ({setModal}) => {
           </button>
         </div>
       </div>
-      <div className="damas">
-        <img src={Damas} alt="" />
-      </div>
+      
     </div>
   );
 };

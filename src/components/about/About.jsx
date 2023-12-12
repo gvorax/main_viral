@@ -8,6 +8,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 const About = () => {
+  const [more, setMore] = React.useState(false);
   return (
     <div className="about" id="about">
       <h2 data-aos="fade-up">Biz haqimizda</h2>
@@ -32,9 +33,17 @@ const About = () => {
         qayg'uradi va iliq suv bilan ishlaydigan kulerlarni taklif etadi va iliq
         suv bilan ishlaydigan kulerlarni taklif etadiva iliq suv bilan
         ishlaydigan kulerlarni taklif etadi. Vital – Hayot ekologiyasi.
+        {more && (
+          <span>
+            {" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            cum neque, sint, cupiditate exercitationem dolores quidem alias nisi
+            itaque nulla possimus libero aliquam eum officia.{" "}
+          </span>
+        )}
       </p>
       <div className="subLink" data-aos="fade-up">
-        <h3 className="link">Ko'proq o'qish</h3>
+        <h3 className="link" onClick={()=>{setMore(!more)}} > {!more ? "Ko'proq o'qish":"Qisqartirish"} </h3>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"
@@ -54,7 +63,7 @@ const About = () => {
       </div>
 
       <Swiper
-      data-aos="fade-up"
+        data-aos="fade-up"
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}

@@ -1,5 +1,7 @@
 import React from "react";
 import Change from "../../assets/change.png";
+import Damas1 from "../../assets/damas1.png";
+import Balon from '../../assets/balon.png'
 import "./video.scss";
 
 const Video = () => {
@@ -7,10 +9,10 @@ const Video = () => {
     <div className="video" id="video">
       <div className="video_box">
         <div className="video_title">
-          <h2  data-aos="zoom-in"  data-aos-delay='0'>
+          <h2 data-aos="zoom-in" data-aos-delay="0">
             Vital Suvlariga <span> Zam Zam </span> Qo'shilishini Bilarmidingiz?
           </h2>
-          <div className="video_text"  data-aos="fade-left"  data-aos-delay='300'>
+          <div className="video_text" data-aos="fade-left" data-aos-delay="300">
             <p>
               Vital qadoqlangan tabiiy suvi muqaddas Zam Zam bulog‘idan suv
               qo‘shilishi bilan tayyorlanadi.{" "}
@@ -333,6 +335,17 @@ const Video = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
+        </div>
+      </div>
+      <div className="damas">
+        <div className="damas_main">
+          <img src={Damas1} alt="" />
+          <div className="balon">
+            <img src={Balon} alt="" />
+          </div>
+          <div className="balon balon_second">
+            <img src={Balon} alt="" />
+          </div>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@
   background-size: cover;
   padding-top: 170px;
   padding-bottom: 226px;
+  position: relative;
   .video_box {
     max-width: 1260px;
     margin: 0 auto;
@@ -86,24 +87,74 @@
           padding-top: 12px;
           width: 209px;
         }
-        .line{
-              position: absolute;
-              top: 20%;
-              right: -60%;
-              z-index:0;
+        .line {
+          position: absolute;
+          top: 20%;
+          right: -60%;
+          z-index: 0;
         }
       }
     }
-    .video_container{
+    .video_container {
+      width: 100%;
+      margin-top: 93px;
+
+      iframe {
         width: 100%;
-        margin-top: 93px;
-
-        iframe{
-            width: 100%;
-            height: 708px;
-            border-radius: 10px;
-
-        }
+        height: 708px;
+        border-radius: 10px;
+      }
     }
+  }
+  .damas {
+    position: absolute;
+    top: -120px;
+    right: 0;
+    max-width: 445px;
+
+    .damas_main {
+      width: 100%;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      .balon {
+        position: absolute;
+        left: 112px;
+        bottom: 30px;
+        width: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        animation: balon 2s infinite linear;
+
+        img {
+          width: 100%;
+        }
+
+        &:nth-child(2) {
+          left: 318px;
+          z-index: 2;
+          bottom: 55px;
+          width: 64px;
+          animation: balon 2s infinite linear;
+        }
+      }
+    }
+  }
+}
+
+@keyframes balon {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }

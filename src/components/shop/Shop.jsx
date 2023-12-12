@@ -34,12 +34,12 @@ const Shop = () => {
           slidesPerView={3}
           spaceBetween={30}
           navigation={true}
-          mousewheel={true}
-          keyboard={true}
-          modules={[Navigation, Mousewheel, Keyboard]}
+          // mousewheel={true}
+          // keyboard={true}
+          modules={[Navigation,  ]}
           className="mySwiper"
         >
-            <SwiperSlide data-aos="zoom-in">
+            <SwiperSlide >
               <div className="item_img" >
                 <img src={Item} alt="" />
               </div>
@@ -66,7 +66,7 @@ const Shop = () => {
                 Sotib olish
               </button>
             </SwiperSlide>
-            <SwiperSlide data-aos="zoom-in" data-aos-delay="300">
+            <SwiperSlide >
               <div className="item_img">
                 <img src={Item} alt="" />
               </div>
@@ -93,7 +93,7 @@ const Shop = () => {
                 Sotib olish
               </button>
             </SwiperSlide>
-            <SwiperSlide data-aos="zoom-in" data-aos-delay="600">
+            <SwiperSlide >
               <div className="item_img">
                 <img src={Item} alt="" />
               </div>
@@ -120,7 +120,7 @@ const Shop = () => {
                 Sotib olish
               </button>
             </SwiperSlide>
-            <SwiperSlide data-aos="zoom-in" data-aos-delay="900">
+            <SwiperSlide >
               <div className="item_img">
                 <img src={Item} alt="" />
               </div>
