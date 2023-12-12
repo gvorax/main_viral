@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import React from "react";
 import "./contact.scss";
 
@@ -5,14 +6,14 @@ const Contact = () => {
   return (
     <div className="contact" id="contact">
       <h2 data-aos="fade-up" data-aos-delay="0">
-        Bog'lanish Uchun <span> Ma'lumot </span>
+        {t("contactTitle")} <span> {t("contactSubtitle")} </span>
       </h2>
       <div className="contact_info">
         <div className="info_day" data-aos="zoom-out" data-aos-delay="400">
           <div className="building">
             <h3>
               {" "}
-              <span></span> Bosh ofisimiz{" "}
+              <span></span> {t("headOffice")}{" "}
             </h3>
             <div className="building_info">
               <div className="location">
@@ -29,7 +30,7 @@ const Contact = () => {
                   />
                 </svg>
               </div>
-              <a>Toshkent sh., Shayxontohur tum., Kichik xalqa yo'li, 63A</a>
+              <a> {t("locationHead")} </a>
             </div>
             <div className="building_info">
               <svg
@@ -67,36 +68,36 @@ const Contact = () => {
           <div className="days">
             <h3>
               {" "}
-              <span></span> Ish vaqti{" "}
+              <span></span> {t("time")}
             </h3>
             <div className="time">
               <p>
                 {" "}
-                <span> Dushanba:</span> 9:00-18:00{" "}
+                <span> {t("monday")}  </span> 9:00-18:00{" "}
               </p>
               <p>
                 {" "}
-                <span> Seshanba:</span> 9:00-18:00{" "}
+                <span> {t("tuesday")}</span> 9:00-18:00{" "}
               </p>
               <p>
                 {" "}
-                <span> Chorshanba:</span> 9:00-18:00{" "}
+                <span> {t("wednesday")}</span> 9:00-18:00{" "}
               </p>
               <p>
                 {" "}
-                <span> Payshanba:</span> 9:00-18:00{" "}
+                <span> {t("thursday")}</span> 9:00-18:00{" "}
               </p>
               <p>
                 {" "}
-                <span> Juma:</span> 9:00-18:00{" "}
+                <span> {t("friday")}</span> 9:00-18:00{" "}
               </p>
               <p>
                 {" "}
-                <span> Shanba:</span> 9:00-18:00{" "}
+                <span> {t("saturday")}</span> 9:00-18:00{" "}
               </p>
               <p>
                 {" "}
-                <span> Yakshanba:</span> Yopiq{" "}
+                <span> {t("sunday")}</span> Yopiq{" "}
               </p>
             </div>
           </div>

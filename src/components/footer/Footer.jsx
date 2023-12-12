@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import React from "react";
 import { Link } from "react-scroll";
 import "./footer.scss";
@@ -46,24 +47,24 @@ const Footer = ({ setModal }) => {
       </div>
 
       <div className="footer_info">
-        <button onClick={() => setModal(true)}>Bog'lanish</button>
+        <button onClick={() => setModal(true)}> {t("contact")} </button>
 
         <div className="navlinks">
           <ul>
             <li>
-              <Link to="home">Home</Link>
+              <Link to="home"> {t("home")} </Link>
             </li>
             <li>
-              <Link to="about">Biz Haqimizda </Link>
+              <Link to="about"> {t("about")} </Link>
             </li>
             <li>
-              <Link to="shop">Maxsulotlar</Link>
+              <Link to="shop">{t("product")}</Link>
             </li>
             <li>
-              <Link to="delivery">Xizmatlar</Link>
+              <Link to="delivery">{t("services")}</Link>
             </li>
             <li>
-              <Link to="contact">Bog'lanish</Link>
+              <Link to="contact">{t("contact")}</Link>
             </li>
           </ul>
         </div>

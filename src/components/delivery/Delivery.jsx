@@ -8,9 +8,11 @@ import Bot5 from "../../assets/bot5.png";
 import Del1 from "../../assets/del1.png";
 import Del2 from "../../assets/del2.png";
 import Del3 from "../../assets/del3.png";
+import { useTranslation } from "react-i18next";
 import "./Delivery.scss";
 
 const Delivery = ({setModal}) => {
+  const {t} = useTranslation();
   return (
     <div className="delivery" id="delivery" >
       <div className="del_box" data-aos="zoom-in" data-aos-delay="0">
@@ -35,11 +37,10 @@ const Delivery = ({setModal}) => {
         </div>
         <div className="del_text" >
           <h3 data-aos="fade-right"  data-aos-delay="400">
-            Yetkazib berish <span> xizmati</span>
+            {t('deliveryTitle')} <span> {t('titleSpan')}</span>
           </h3>
           <p data-aos="fade-right"  data-aos-delay="600">
-            Suv yetkazib berish xizmatimiz bilan to'g'ridan-to'g'ri
-            eshigingizgacha yetkazib beramiz.
+            {t("deliveryText")}
           </p>
           <div className="del_items">
             <div className="del_item">
@@ -47,21 +48,21 @@ const Delivery = ({setModal}) => {
                 <img src={Del3} alt="" />
               </div>
               <span data-aos="fade-right"  data-aos-delay="900"></span>
-              <p data-aos="fade-right"  data-aos-delay="1000">Bepul yetkazib berish</p>
+              <p data-aos="fade-right"  data-aos-delay="1000">{t("freeDel")}</p>
             </div>
             <div className="del_item">
               <div className="item_img" data-aos="fade-right"  data-aos-delay="1100">
                 <img src={Del2} alt="" />
               </div>
               <span data-aos="fade-right"  data-aos-delay="1200"></span>
-              <p data-aos="fade-right"  data-aos-delay="1300">24/7 Istalgan vaqtda</p>
+              <p data-aos="fade-right"  data-aos-delay="1300">{t("workTime")}</p>
             </div>
             <div className="del_item">
               <div className="item_img" data-aos="fade-right"  data-aos-delay="1400">
                 <img src={Del1} alt="" />
               </div>
               <span data-aos="fade-right"  data-aos-delay="1500"></span>
-              <p data-aos="fade-right"  data-aos-delay="1600">Ostonagacha yetkazish</p>
+              <p data-aos="fade-right"  data-aos-delay="1600"> {t("location")} </p>
             </div>
           </div>
           <button onClick={()=>setModal(true)} data-aos="fade-up" >
@@ -77,7 +78,7 @@ const Delivery = ({setModal}) => {
                 fill="#222222"
               />
             </svg>
-            Buyurtma berish
+           {t("order")}
           </button>
         </div>
       </div>
