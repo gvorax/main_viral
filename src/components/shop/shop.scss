@@ -71,6 +71,10 @@
         border: 1px solid #13bbea;
       }
 
+      &:focus, &:hover{
+        border: 1px solid #13bbea;
+      }
+
       h5 {
         color: #222;
         text-align: center;
