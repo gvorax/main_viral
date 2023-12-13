@@ -30,7 +30,7 @@ const Video = () => {
                 <path
                   d="M17 1L21 5M21 5L17 9M21 5H1"
                   stroke="#F5A93F"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
@@ -70,7 +70,7 @@ const Video = () => {
                 <path
                   d="M1 4.87011C55 -3.9994 100.5 4.8695 147 43.0009"
                   stroke="#D9D9D9"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke-miterlimit="16"
                   stroke-linejoin="round"
                   stroke-dasharray="7 7"
@@ -169,7 +169,7 @@ const Video = () => {
                 <path
                   d="M1 4.87011C55 -3.9994 100.5 4.8695 147 43.0009"
                   stroke="#D9D9D9"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke-miterlimit="16"
                   stroke-linejoin="round"
                   stroke-dasharray="7 7"
@@ -236,7 +236,7 @@ const Video = () => {
                 <path
                   d="M1 4.87011C55 -3.9994 100.5 4.8695 147 43.0009"
                   stroke="#D9D9D9"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke-miterlimit="16"
                   stroke-linejoin="round"
                   stroke-dasharray="7 7"
@@ -260,7 +260,7 @@ const Video = () => {
                 <path
                   d="M1 4.87011C55 -3.9994 100.5 4.8695 147 43.0009"
                   stroke="#D9D9D9"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke-miterlimit="16"
                   stroke-linejoin="round"
                   stroke-dasharray="7 7"

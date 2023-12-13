@@ -79,7 +79,6 @@
         .contact_text .logo_subtitle {
           color: #f5a93f;
           opacity: 0.9;
-          
         }
       }
     }
@@ -94,8 +93,7 @@
       margin-right: 20px;
       border-radius: 60px;
       background: #fff;
-      backdrop-filter: blur(12.5px) !important  ;
-      // backdrop-filter: blur(12.5px);
+      backdrop-filter: blur(12.5px);
       box-shadow: 0 0 30px 20px #fff;
       ul {
         display: flex;
@@ -290,7 +288,7 @@
             &:last-child {
               border-bottom: none;
             }
-            
+
             img {
               width: 32px;
               height: 32px;

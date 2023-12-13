@@ -25,7 +25,7 @@ const About = () => {
           <path
             d="M3 6.91579C5.5 3.18778 9.5 0.743381 13.5 6.12117C17.2352 11.1429 22.3333 8.56566 23.5 6.12114C25.3607 2.22236 31.5 2.22236 34 5.64481C37.6316 10.6164 41.5 9.55628 43 5.64481"
             stroke="#F5A93F"
-            stroke-width="5"
+            strokeWidth="5"
             stroke-linecap="round"
           />
         </svg>
@@ -51,7 +51,7 @@ const About = () => {
           <path
             d="M17 1L21 5M21 5L17 9M21 5H1"
             stroke="#F5A93F"
-            stroke-width="2"
+            strokeWidth="2"
             stroke-linecap="round"
             stroke-linejoin="round"
           />
