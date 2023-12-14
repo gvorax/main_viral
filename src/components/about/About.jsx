@@ -15,8 +15,8 @@ const About = () => {
   const { t } = useTranslation();
   return (
     <div className="about" id="about">
-      <h2 data-aos="fade-up">{t("about")}</h2>
-      <span data-aos="fade-up">
+      <h2>{t("about")}</h2>
+      <span>
         <svg
           width="46"
           height="12"
