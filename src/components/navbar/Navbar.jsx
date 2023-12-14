@@ -24,6 +24,7 @@ const Navbar = () => {
   const onClose = () => {
     setOpen(false);
   };
+  
   return (
     <React.Fragment>
       {/*sidebar*/}
