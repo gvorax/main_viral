@@ -43,8 +43,58 @@ html {
   display: none !important;
 } */
 
+@media screen and (max-width: 1440px) {
+  .promotion .container .promotion_box {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .video .video_box .video_title {
+    padding: 30px;
+  }
+  .video .damas .damas_main img {
+    margin-top: 100px;
+    display: none;
+  }
+  .video {
+    margin-top: 300px;
+  }
+  .promotion .container .pro_title {
+    margin-top: 300px;
+  }
+  .video {
+    overflow: hidden;
+  }
+
+  .contact .contact_info {
+    overflow: hidden;
+    padding: 20px;
+  }
+  .video .video_box .video_water {
+    justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .video .video_box .video_water {
+    justify-content: center;
+  }
+  .navbar .navbar_logo .logo_contact {
+    display: none;
+  }
+  .promotion .container .promotion_box {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
 /* large screen  */
 @media screen and (max-width: 1024px) {
+  .iframe-video {
+    height: 300px !important;
+  }
   .property2 img {
     width: 100%;
   }
@@ -120,10 +170,19 @@ html {
   .logo {
     display: block;
   }
+
+  .promotion .container .promotion_box {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
 }
 
 /* medium screen  */
 @media screen and (max-width: 768px) {
+  .contact {
+    margin-top: 0 !important;
+  }
   [data-aos^="fade"][data-aos^="fade"].aos-animate {
     width: auto !important;
   }
@@ -253,10 +312,49 @@ html {
   .promotion .container .pro_title .subTitle {
     flex-direction: column;
   }
+  .promotion .container .promotion_box {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  [data-aos^="fade"][data-aos^="fade"].aos-animate span {
+    font-size: 22px;
+  }
 }
 
 /* small screen  */
 @media screen and (max-width: 576px) {
+  .promotion .container .water_property .property1 .proBox {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .promotion .container .water_property .property1 .proBox p {
+    text-align: center;
+  }
+  .promotion .container .water_property .property1 {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .footer .footer_bg .bg_wave1 {
+    height: 800px;
+  }
+
+  .footer .footer_bg .bg_wave2 {
+    height: 800px;
+  }
+
+  .footer .footer_bg .bg_wave3 {
+    height: 800px;
+  }
+
+  .footer .top_button {
+    padding-bottom: 100px !important;
+  }
+  .promotion .container .pro_title {
+    margin-top: 50px;
+  }
   .wrapper {
     background-color: white;
   }
@@ -557,5 +655,10 @@ html {
 
   .video .video_box .video_title .video_text p {
     width: 260px;
+  }
+  .promotion .container .promotion_box {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
   }
 }
