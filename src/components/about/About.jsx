@@ -1,17 +1,21 @@
 import React from "react";
 import "./about.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper/modules";
 
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay} from "swiper/modules";
+
+import { useTranslation } from "react-i18next";
+import Images from "../../assets/bgInter.jpg"
 
 const About = () => {
   const [more, setMore] = React.useState(false);
+  const { t } = useTranslation();
   return (
     <div className="about" id="about">
-      <h2>Biz haqimizda</h2>
+      <h2>{t("about")}</h2>
       <span>
         <svg
           width="46"
@@ -23,24 +27,14 @@ const About = () => {
           <path
             d="M3 6.91579C5.5 3.18778 9.5 0.743381 13.5 6.12117C17.2352 11.1429 22.3333 8.56566 23.5 6.12114C25.3607 2.22236 31.5 2.22236 34 5.64481C37.6316 10.6164 41.5 9.55628 43 5.64481"
             stroke="#F5A93F"
-            stroke-width="5"
+            strokeWidth="5"
             stroke-linecap="round"
           />
         </svg>
       </span>
-      <p>
-        Vital kompaniyasi sizning va yaqinlaringizning sog'lig'i haqida
-        qayg'uradi va iliq suv bilan ishlaydigan kulerlarni taklif etadi va iliq
-        suv bilan ishlaydigan kulerlarni taklif etadiva iliq suv bilan
-        ishlaydigan kulerlarni taklif etadi. Vital – Hayot ekologiyasi.
-        {more && (
-          <span>
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            cum neque, sint, cupiditate exercitationem dolores quidem alias nisi
-            itaque nulla possimus libero aliquam eum officia.{" "}
-          </span>
-        )}
+      <p data-aos="fade-up">
+        {t("aboutText")}
+        {more && <span>{t("aboutText2")}</span>}
       </p>
       <div className="subLink" data-aos="fade-up">
         <h3
@@ -50,7 +44,7 @@ const About = () => {
           }}
         >
           {" "}
-          {!more ? "Ko'proq o'qish" : "Qisqartirish"}{" "}
+          {!more ? t("more") : t("less")}{" "}
         </h3>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +57,7 @@ const About = () => {
           <path
             d="M17 1L21 5M21 5L17 9M21 5H1"
             stroke="#F5A93F"
-            stroke-width="2"
+            strokeWidth="2"
             stroke-linecap="round"
             stroke-linejoin="round"
           />
@@ -72,50 +66,26 @@ const About = () => {
 
       <Swiper
         data-aos="fade-up"
-        effect={"coverflow"}
-        grabCursor={true}
+        spaceBetween={30}
         centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
         }}
-        autoplay={{ delay: 2500 }}
-        loop={true}
-        // pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <img src={Images} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>
     </div>
   );

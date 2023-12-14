@@ -93,8 +93,7 @@
       margin-right: 20px;
       border-radius: 60px;
       background: #fff;
-      backdrop-filter: blur(12.5px) !important  ;
-      // backdrop-filter: blur(12.5px);
+      backdrop-filter: blur(12.5px);
       box-shadow: 0 0 30px 20px #fff;
       ul {
         display: flex;
@@ -120,6 +119,7 @@
             line-height: normal;
             text-decoration: none;
             transition: 0.3s ease-in-out;
+            text-transform: uppercase;
             // margin-bottom: 10px;
 
             &:active,

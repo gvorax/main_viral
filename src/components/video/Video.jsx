@@ -3,6 +3,7 @@ import Change from "../../assets/change.png";
 import Damas1 from "../../assets/damas1.png";
 import Balon from '../../assets/balon.png'
 import "./video.scss";
+import { t } from "i18next";
 
 const Video = () => {
   return (
@@ -10,15 +11,14 @@ const Video = () => {
       <div className="video_box">
         <div className="video_title">
           <h2 data-aos="zoom-in" data-aos-delay="0">
-            Vital Suvlariga <span> Zam Zam </span> Qo'shilishini Bilarmidingiz?
+            {t("water")} <span> {t("waterTitle")} </span> {t('waterSubtitle')}
           </h2>
           <div className="video_text" data-aos="fade-left" data-aos-delay="300">
             <p>
-              Vital qadoqlangan tabiiy suvi muqaddas Zam Zam bulog‘idan suv
-              qo‘shilishi bilan tayyorlanadi.{" "}
+              {t("waterText")}
             </p>
             <div className="subLink">
-              <h3 className="link">Ko'proq o'qish</h3>
+              <h3 className="link">{t("more")}</h3>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
@@ -30,7 +30,7 @@ const Video = () => {
                 <path
                   d="M17 1L21 5M21 5L17 9M21 5H1"
                   stroke="#F5A93F"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
@@ -58,7 +58,7 @@ const Video = () => {
                 />
               </svg>
             </div>
-            <p>Qudug‘dan Zam Zam Suvi Olinadi </p>
+            <p> {t("water1")} </p>
             <div className="line">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ const Video = () => {
                 <path
                   d="M1 4.87011C55 -3.9994 100.5 4.8695 147 43.0009"
                   stroke="#D9D9D9"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke-miterlimit="16"
                   stroke-linejoin="round"
                   stroke-dasharray="7 7"
@@ -157,7 +157,7 @@ const Video = () => {
                 />
               </svg>
             </div>
-            <p>Maxsus idishlarga qadoqlanadi</p>
+            <p>{t("water2")}</p>
             <div className="line">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -169,7 +169,7 @@ const Video = () => {
                 <path
                   d="M1 4.87011C55 -3.9994 100.5 4.8695 147 43.0009"
                   stroke="#D9D9D9"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke-miterlimit="16"
                   stroke-linejoin="round"
                   stroke-dasharray="7 7"
@@ -224,7 +224,7 @@ const Video = () => {
                 />
               </svg>
             </div>
-            <p>Vital zavodlariga yetkaziladi</p>
+            <p>{t("water3")}</p>
             <div className="line">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +236,7 @@ const Video = () => {
                 <path
                   d="M1 4.87011C55 -3.9994 100.5 4.8695 147 43.0009"
                   stroke="#D9D9D9"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke-miterlimit="16"
                   stroke-linejoin="round"
                   stroke-dasharray="7 7"
@@ -248,7 +248,7 @@ const Video = () => {
             <div className="item_box">
               <img src={Change} alt="" />
             </div>
-            <p>Labatoriya tekshiruvidan o'tkaziladi</p>
+            <p>{t("water4")}</p>
             <div className="line">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +260,7 @@ const Video = () => {
                 <path
                   d="M1 4.87011C55 -3.9994 100.5 4.8695 147 43.0009"
                   stroke="#D9D9D9"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke-miterlimit="16"
                   stroke-linejoin="round"
                   stroke-dasharray="7 7"
@@ -322,7 +322,7 @@ const Video = () => {
                 </defs>
               </svg>
             </div>
-            <p>Vital suvlariga qo‘shiladi</p>
+            <p>{t("water5")}</p>
           </div>
         </div>
         <div className="video_container">
