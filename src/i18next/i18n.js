@@ -39,12 +39,10 @@ i18n.use(initReactI18next).init({
         confirmedText: `Suvning hayotimizdagi ahamiyati tufayli biz mijozlarimizga 99,99%
         toza suv beramiz.`,
         confirmedText1: `Bizning suvlarimizda 0,5 mg/l dan kamroq kloridlar mavjud.`,
-        confirmedTexta: `Suv turli xil bakteriyalarga ega. 5 bosqichli filtrlash esa
-        suvning barcha bakteriyalardan xalos qiladi.`,
-        confirmedTexta1: `Suv turli xil bakteriyalarga ega. 5 bosqichli filtrlash esa suvning barcha bakteriyalardan xalos qiladi.`,
-        confirmedTextb: `Mijozlarning hayoti haqida o'ylaymiz shuning uchun biz suvga past
-        miqdorda tuz qo‘shamiz, chunki tuz sog'lig'imizga zarar yetkazadi.`,
-        confirmedTextb1: `Mijozlarning hayoti haqida o'ylaymiz shuning uchun biz suvga past miqdorda tuz qo‘shamiz, chunki tuz sog'lig'imizga zarar yetkazadi.`,
+        confirmedTexta: `Suv tarkibida turli xil bakteriyalar mavjud. Biz suvimizni 9 bosqichli filtrlash jarayonidan o’tkazamiz `,
+        confirmedTexta1: `va tarkibiga Saudi Arabistondan keltirilgan asl Zam-Zam suvlaridan qo’shamiz.`,
+        confirmedTextb: `Mijozlarimiz sog’liqlarini o’ylaymiz! Suvimiz tarkibidagi keraksiz mikroelementlardan tozalash jarayonlarini`,
+        confirmedTextb1: `yapon va xitoy texnologiyalarida va albatta to’liq avtomatlashtirilgan texnikalarda bajaramiz.`,
         confirmedTextc: `Ishlab chiqarish va qadoqlash jarayonlari to'la
         avtomatlashtirilgan va har qanday inson aralashuvidan himoyalangan`,
         confirmedTextc1: `Ishlab chiqarish va qadoqlash jarayonlari to'la avtomatlashtirilgan va har qanday inson aralashuvidan himoyalangan`,
@@ -84,8 +82,10 @@ i18n.use(initReactI18next).init({
         water: "Vital Suvlariga",
         waterTitle: `Zam Zam`,
         waterSubtitle: `Qo'shilishini Bilarmidingiz?`,
-        waterText: `Vital qadoqlangan tabiiy suvi muqaddas Zam Zam bulog‘idan suv
-        qo‘shilishi bilan tayyorlanadi.`,
+        waterText: `Vital suviga - muqaddas Zam Zam bulog’idan qadoqlangan holda olib keltirilgan asl Zam-Zam suvi qo’shiladi. `,
+        waterText1:`Zam-Zam suvi shifobaxsh hamda inson salomatligi uchun bir qator foydali xususiyatlarga boy bo’lganligi sababli biz uni Vital suvlariga qo’shamiz. Undan tashqari Vital suvining yumshoqligi aynan shu Zam-Zam suvining qo’shilishi boisidir.
+        Zam-Zam suvi qo’shilgan suv, Zam-Zam suvidagi bor barcha foydali elementlarni o’z ichiga jamlagan bo’lib, toza va shaffof hisoblanadi. 
+        Siz Vital suvini ichish orqali barcha foydali xususiyatlardan bahramand bo’lishingiz mumkin.`,
         water1: `Qudug‘dan Zam Zam Suvi Olinadi `,
         water2: `Maxsus idishlarga qadoqlanadi`,
         water3: `Vital zavodlariga yetkaziladi`,
@@ -138,12 +138,10 @@ i18n.use(initReactI18next).init({
         confirmedText: `Из-за важности воды в нашей жизни мы обеспечиваем наших клиентов 99,99%
         мы даем чистую воду.`,
         confirmedText1: `Наши воды содержат менее 0,5 мг/л хлоридов.`,
-        confirmedTexta: `В воде обитают разнообразные бактерии. И 5-ступенчатая фильтрация
-        удаляет все бактерии из воды.`,
-        confirmedTexta1: `В воде обитают разнообразные бактерии. 5-ступенчатая фильтрация удаляет из воды все бактерии.`,
-        confirmedTextb: `Мы думаем о жизни наших клиентов, поэтому у нас мало воды
-        мы добавляем много соли, потому что соль вредна для нашего здоровья.`,
-        confirmedTextb1: `Мы думаем о жизни наших клиентов, поэтому добавляем в воду небольшое количество соли, ведь соль вредна для нашего здоровья.`,
+        confirmedTexta: `В воде содержатся разные виды бактерий. Мы пропускаем нашу воду через 9-ступенчатый процесс фильтрации.`,
+        confirmedTexta1: `и добавьте оригинальную воду Zam-Zam из Саудовской Аравии.`,
+        confirmedTextb: `Мы заботимся о здоровье наших клиентов! Мы используем японские и китайские технологии `,
+        confirmedTextb1: `по удалению ненужных микроэлементов из нашей воды и, конечно же, полностью автоматизированное оборудование.`,
         confirmedTextc: `Процессы производства и упаковки завершены.
         автоматизирован и защищен от любого вмешательства человека`,
         confirmedTextc1: `Процессы производства и упаковки завершены.
@@ -184,8 +182,10 @@ i18n.use(initReactI18next).init({
         water: "К жизненным водам",
         waterTitle: `Zam Zam`,
         waterSubtitle: `Вы знали, что это включено?`,
-        waterText: `Жизненно важная упакованная природная вода – это вода из священного источника Зам Зам.
-        приготовленный с добавлением`,
+        waterText: `В воду «Витал» добавляется оригинальная вода «Зам-Зам», принесенная в упаковке из священного источника «Зам-Зам».`,
+        waterText1:`Поскольку вода «Зам-Зам» богата целебными свойствами и рядом полезных свойств для здоровья человека, мы добавляем ее в воды «Витал». Кроме того, мягкость воды «Витал» обусловлена ​​добавлением воды «Зам-Зам».
+        Вода с добавлением воды Зам-Зам содержит все полезные элементы, содержащиеся в воде Зам-Зам, чиста и прозрачна.
+        Вы сможете насладиться всеми полезными свойствами, выпивая воду Vital.`,
         water1: `Зам Зам Вода берется из колодца. `,
         water2: `Упаковано в специальные контейнеры`,
         water3: `Поставлено на жизненно важные заводы`,
@@ -240,12 +240,9 @@ i18n.use(initReactI18next).init({
         confirmedText1: `Our waters contain less than 0.5 mg/l of chlorides.`,
         confirmedTexta: `Water has a variety of bacteria. And 5-step filtering
         removes all bacteria from the water.`,
-        confirmedTexta1: `Water has a variety of bacteria. And 5-step filtering
-        removes all bacteria from the water.`,
-        confirmedTextb: `We think about the lives of our customers, so we are low on water
-        we add a lot of salt, because salt is harmful to our health.`,
-        confirmedTextb1: `We think about the lives of our customers, so we are low on water
-        we add a lot of salt, because salt is harmful to our health.`,
+        confirmedTexta1: `and add original Zam-Zam water from Saudi Arabia.`,
+        confirmedTextb: `We care about the health of our customers! We use Japanese and Chinese technologies to remove `,
+        confirmedTextb1: `unnecessary microelements from our water, and of course, fully automated equipment.`,
         confirmedTextc: `The production and packaging processes are complete
         automated and protected from any human intervention`,
         confirmedTextc1: `The production and packaging processes are complete
@@ -286,8 +283,10 @@ i18n.use(initReactI18next).init({
         water: "Did you know that",
         waterTitle: `Zam Zam`,
         waterSubtitle: `is added to Vital Waters?`,
-        waterText: `Vital packaged natural water is water from the sacred Zam Zam spring
-        prepared with the addition of`,
+        waterText: `Original Zam-Zam water brought in a package from the holy Zam Zam spring is added to Vital water.`,
+        waterText1:`Since Zam-Zam water is rich in healing properties and a number of beneficial properties for human health, we add it to Vital waters. In addition, the softness of Vital water is due to the addition of Zam-Zam water.
+        Water with added Zam-Zam water contains all useful elements found in Zam-Zam water and is clean and transparent.
+        You can enjoy all the beneficial properties by drinking Vital water.`,
         water1: `Zam Zam Water is taken from the well `,
         water2: `Packed in special containers`,
         water3: `Delivered to Vital plants`,

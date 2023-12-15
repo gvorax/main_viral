@@ -1,10 +1,10 @@
 .video {
   width: 100%;
-  background-image: url("../../assets/bg_blue1.png");
+  background-image: url("../../assets/big\ wave.png");
   background-size: cover;
-  padding-top: 170px;
-  padding-bottom: 226px;
-  animation: wave3 2s infinite linear;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  animation: wave3 12s infinite linear;
   position: relative;
   .video_box {
     max-width: 1260px;
@@ -113,6 +113,7 @@
     right: 100px;
     max-width: 445px;
     transform: rotate(5deg);
+    animation: damasAnime 7s infinite linear;
 
     .damas_main {
       width: 100%;
@@ -154,14 +155,12 @@
   overflow: hidden;
 }
 
-.swiper-slide{
+.swiper-slide {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
 
 @keyframes balon {
   0% {
@@ -178,10 +177,24 @@
   0% {
     background-position-x: 0;
   }
+  100% {
+    background-position-x: -100%;
+  }
+}
+@keyframes damasAnime {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(80px);
+  }
   50% {
-    background-position-x: -50px;
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(80px);
   }
   100% {
-    background-position-x: 0;
+    transform: translateY(0);
   }
 }

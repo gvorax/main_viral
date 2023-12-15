@@ -8,14 +8,32 @@ import Image5 from "../../assets/image5.png";
 import drop from "../../assets/drop.png";
 import VitalWater from "../../assets/vitalWater.png";
 import { useTranslation } from "react-i18next";
+import ReadMoreButton from "../../constants/readMore/ReadMore";
 
 const Promotion = () => {
-  const [more1, setmore1] = useState(false);
-  const [more2, setmore2] = useState(false);
-  const [more3, setmore3] = useState(false);
-  const [more4, setmore4] = useState(false);
-  const [more5, setmore5] = useState(false);
   const { t } = useTranslation();
+
+  const paragraphs = [
+    `${t("confirmedText")}`,
+    `${t("confirmedText1")}`,
+  ]
+  const paragraphsa = [
+    `${t("confirmedTexta")}`,
+    `${t("confirmedTexta1")}`,
+  ]
+  const paragraphsb = [
+    `${t("confirmedTextb")}`,
+    `${t("confirmedTextb1")}`,
+  ]
+  const paragraphsc = [
+    `${t("confirmedTextc")}`,
+    `${t("confirmedTextc1")}`,
+  ]
+  const paragraphsd = [
+    `${t("confirmedTextd")}`,
+    `${t("confirmedTextd1")}`,
+  ]
+
   return (
     <div className="promotion" id="promotion">
       <div className="container">
@@ -45,13 +63,7 @@ const Promotion = () => {
               <img src={Image1} alt="" />
             </div>
             <h3>{t("confirmed")}</h3>
-            <p>
-              {t("confirmedText")}
-              {more1 && <span> {t("confirmedText1")} </span>}
-            </p>
-            <span className="link underline" onClick={() => setmore1(!more1)}>
-              Ko‘proq o‘qish
-            </span>
+            <ReadMoreButton paragraphs={paragraphs} class1={true} />
           </div>
           <div className="box_item_wave">
             <svg
@@ -73,13 +85,7 @@ const Promotion = () => {
               <img src={Image2} alt="" />
             </div>
             <h3>{t("confirmed")}</h3>
-            <p>
-              {t("confirmedTexta")}
-              {more2 && <span>{t("confirmedTexta1")}</span>}
-            </p>
-            <span className="link underline" onClick={() => setmore2(!more2)}>
-              {t("more")}
-            </span>
+            <ReadMoreButton paragraphs={paragraphsa} class1={true} />
           </div>
           <div className="box_item_wave">
             <svg
@@ -101,13 +107,7 @@ const Promotion = () => {
               <img src={Image3} alt="" />
             </div>
             <h3>{t("confirmed")}</h3>
-            <p>
-              {t("confirmedTextb")}
-              {more3 && <span>{t("confirmedTextb1")}</span>}
-            </p>
-            <span className="link underline" onClick={() => setmore3(!more3)}>
-              {t("more")}
-            </span>
+            <ReadMoreButton paragraphs={paragraphsb} class1={true} />
           </div>
           <div className="box_item_wave">
             <svg
@@ -129,13 +129,7 @@ const Promotion = () => {
               <img src={Image4} alt="" />
             </div>
             <h3>{t("confirmed")}</h3>
-            <p>
-              {t("confirmedTextc")}
-              {more4 && <span> {t("confirmedTextc1")}</span>}
-            </p>
-            <span className="link underline" onClick={() => setmore4(!more4)}>
-              {t("more")}
-            </span>
+            <ReadMoreButton paragraphs={paragraphsc} class1={true} />
           </div>
           <div className="box_item_wave">
             <svg
@@ -157,13 +151,7 @@ const Promotion = () => {
               <img src={Image5} alt="" />
             </div>
             <h3>{t("confirmed")}</h3>
-            <p>
-              {t("confirmedTextd")}
-              {more5 && <span> {t("confirmedTextd1")} </span>}
-            </p>
-            <span className="link underline" onClick={() => setmore5(!more5)}>
-              {t("more")}
-            </span>
+            <ReadMoreButton paragraphs={paragraphsd} class1={true} />
           </div>
         </div>
 

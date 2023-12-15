@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ReadMore.scss"; // Create a CSS file for styling
 import { useTranslation } from "react-i18next";
 
-const ReadMoreButton = ({ paragraphs }) => {
+const ReadMoreButton = ({ paragraphs, class1 }) => {
   const [showFullText, setShowFullText] = useState(false);
 
   const toggleText = () => {
@@ -13,17 +13,17 @@ const ReadMoreButton = ({ paragraphs }) => {
 
   return (
     <div className="read-more-container">
-      <div className={`text ${showFullText ? "show-full-text" : ""}`}>
+      <div className={` text ${showFullText ? "show-full-text" : ""}`}>
         {paragraphs.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
       </div>
-      <div className="subLink" data-aos="fade-up" onClick={toggleText}>
-        <h3
-          className="link"
-        >
-          {!showFullText ? t("more") : t("less")}{" "}
-        </h3>
+      <div
+        className={` subLink  `}
+        data-aos="fade-up"
+        onClick={toggleText}
+      >
+        <h5 className={`${class1 ? "link underline" : " link"}`} >{!showFullText ? t("more") : t("less")} </h5>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"

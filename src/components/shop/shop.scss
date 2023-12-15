@@ -1,9 +1,10 @@
 .shop {
   width: 100%;
-  background-image: url("../../assets/shoBg.png");
+  padding-top: 50px;
+  background-image: url("../../assets/small\ wave.png");
   background-size: cover;
   padding-bottom: 158px;
-  animation: wave2 2s infinite linear;
+  animation: wave2 10s infinite linear;
   h2 {
     padding-top: 155px;
     color: #222;
@@ -159,11 +160,8 @@
   0% {
     background-position-x: 0;
   }
-  50% {
-    background-position-x: -100px;
-  }
   100% {
-    background-position-x: 0;
+    background-position-x: -100%;
   }
 }
 

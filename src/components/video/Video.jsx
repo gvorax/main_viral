@@ -11,8 +11,14 @@ import { FreeMode, Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import  Video1  from "../../assets/video1.mp4";
 import  Video2  from "../../assets/video2.mp4";
+import ReadMoreButton from "../../constants/readMore/ReadMore";
 
 const Video = () => {
+  const paragraphs = [
+    `${t("waterText")}`,
+    `${t("waterText1")}`,
+
+  ]
   return (
     <div className="video" id="video">
       <div className="video_box">
@@ -21,26 +27,7 @@ const Video = () => {
             {t("water")} <span> {t("waterTitle")} </span> {t("waterSubtitle")}
           </h2>
           <div className="video_text" data-aos="fade-left" data-aos-delay="300">
-            <p>{t("waterText")}</p>
-            <div className="subLink">
-              <h3 className="link">{t("more")}</h3>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="10"
-                viewBox="0 0 22 10"
-                fill="none"
-              >
-                <path d="M17 1L21 5L17 9M1 5H21H1Z" fill="#F5A93F" />
-                <path
-                  d="M17 1L21 5M21 5L17 9M21 5H1"
-                  stroke="#F5A93F"
-                  strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
+            <ReadMoreButton paragraphs={paragraphs}/>
           </div>
         </div>
         <div className="video_water">
