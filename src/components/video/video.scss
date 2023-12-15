@@ -4,6 +4,7 @@
   background-size: cover;
   padding-top: 170px;
   padding-bottom: 226px;
+  animation: wave3 10s infinite linear;
   position: relative;
   .video_box {
     max-width: 1260px;
@@ -109,7 +110,7 @@
   .damas {
     position: absolute;
     top: -120px;
-    right: 0;
+    right: 100px;
     max-width: 445px;
 
     .damas_main {
@@ -156,5 +157,16 @@
   }
   100% {
     transform: rotate(-360deg);
+  }
+}
+@keyframes wave3 {
+  0% {
+    background-position-x: 0;
+  }
+  // 50% {
+  //   background-position-x: 50%;
+  // }
+  100% {
+    background-position-x: 1920px;
   }
 }

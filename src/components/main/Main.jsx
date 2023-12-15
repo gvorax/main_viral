@@ -46,7 +46,7 @@ const Main = ({ setModal, setModal1 }) => {
           <h1 data-aos="fade-right">{t("clean")}</h1>
           <div className="main_btns" data-aos="fade-up">
             <Button title={`${t("order")}`} setModal={setModal} />
-            <Button title={`${t("order")}`} color={"colored"} setModal={setModal1}/>
+            <Button title={`${t("advice")}`} color={"colored"} setModal={setModal1}/>
           </div>
         </div>
       </div>

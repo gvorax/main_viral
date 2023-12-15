@@ -42,6 +42,10 @@ html {
 /* .navbar {
   display: none !important;
 } */
+/* .promotion .container .water_property .property1 .proBox p{
+  width: 400px
+  ;
+} */
 
 @media screen and (max-width: 1440px) {
   .promotion .container .promotion_box {
@@ -61,7 +65,7 @@ html {
     margin-top: 300px;
   }
   .promotion .container .pro_title {
-    margin-top: 300px;
+    margin-top: 100px;
   }
   .video {
     overflow: hidden;
@@ -298,7 +302,7 @@ html {
   }
 
   .promotion {
-    margin-top: 500px;
+    margin-top: 50px;
   }
 
   [data-aos^="fade"][data-aos^="fade"].aos-animate {
@@ -335,9 +339,13 @@ html {
 
   .modal .connect{
     padding: 15px;
+    height: auto;
   }
   .modal .connect form{
     gap: 20px;
+  }
+  .modal .connect form input{
+    font-size: 16px;
   }
 
   .promotion .container .water_property .property1 .proBox {
@@ -368,7 +376,7 @@ html {
     padding-bottom: 100px !important;
   }
   .promotion .container .pro_title {
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
   .wrapper {
     background-color: white;
@@ -509,7 +517,7 @@ html {
     width: 100%;
   }
   .promotion .container .water .water_title h2 {
-    font-size: 40px;
+    font-size: 38px;
   }
 
   .shop .mtSwiper .swiper-button-prev,
@@ -580,7 +588,7 @@ html {
   }
   .about p {
     width: 300px;
-    font-size: 20px;
+    font-size: 20px !important;
     line-height: 30px;
   }
 
@@ -676,4 +684,11 @@ html {
     justify-content: center;
     gap: 50px;
   }
+  .promotion {
+    margin-top: 100px !important;
+}
+.promotion .container .pro_title{
+  margin-top: 50px;
+  font-size: 40px;
+}
 }
