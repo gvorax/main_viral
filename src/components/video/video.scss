@@ -112,6 +112,7 @@
     top: -120px;
     right: 100px;
     max-width: 445px;
+    transform: rotate(5deg);
 
     .damas_main {
       width: 100%;
@@ -164,7 +165,7 @@
     background-position-x: 0;
   }
   50% {
-    background-position-x: -100px;
+    background-position-x: -50px;
   }
   100% {
     background-position-x: 0;
