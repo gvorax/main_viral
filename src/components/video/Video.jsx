@@ -1,7 +1,7 @@
 import React from "react";
 import Change from "../../assets/change.png";
 import Damas1 from "../../assets/damas1.png";
-import Balon from '../../assets/balon.png'
+import Balon from "../../assets/balon.png";
 import "./video.scss";
 import { t } from "i18next";
 
@@ -11,12 +11,10 @@ const Video = () => {
       <div className="video_box">
         <div className="video_title">
           <h2 data-aos="zoom-in" data-aos-delay="0">
-            {t("water")} <span> {t("waterTitle")} </span> {t('waterSubtitle')}
+            {t("water")} <span> {t("waterTitle")} </span> {t("waterSubtitle")}
           </h2>
           <div className="video_text" data-aos="fade-left" data-aos-delay="300">
-            <p>
-              {t("waterText")}
-            </p>
+            <p>{t("waterText")}</p>
             <div className="subLink">
               <h3 className="link">{t("more")}</h3>
               <svg
@@ -327,6 +325,7 @@ const Video = () => {
         </div>
         <div className="video_container">
           <iframe
+            className="iframe-video"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/yvP2c-y4hFI?si=HVc_dTkvb0vpcrIH"
