@@ -175,6 +175,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            width: 450px;
 
             span {
               width: 3px;
@@ -246,4 +247,11 @@
   100% {
     transform: rotate(0deg) scale(1);
   }
+}
+
+@media screen and (max-width:1440px) {
+  .promotion .container .water_property .property1 .proBox p{
+    width: 250px;
+  }
+  
 }

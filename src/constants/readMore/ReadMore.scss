@@ -1,0 +1,30 @@
+.read-more-container {
+    max-width: 100%; /* Adjust as needed */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .text {
+    transition: max-height 0.5s ease-out;
+    max-height: 100px; /* Adjust the initial height */
+    overflow: hidden;
+  }
+  
+  .text p {
+    margin: 0 0 10px; /* Add margin between paragraphs */
+  }
+  
+  .show-full-text {
+    max-height: 1000px; /* Adjust to a large enough value */
+  }
+  
+  .read-more-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  

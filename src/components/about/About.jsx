@@ -1,18 +1,21 @@
 import React from "react";
 import "./about.scss";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Autoplay} from "swiper/modules";
 
 import { useTranslation } from "react-i18next";
-import Images from "../../assets/bgInter.jpg"
+import Images from "../../assets/bgInter.jpg";
+import ReadMoreButton from "../../constants/readMore/ReadMore";
 
 const About = () => {
   const [more, setMore] = React.useState(false);
   const { t } = useTranslation();
+  const paragraphs = [
+    `${t("aboutText")}`,
+    `${t("aboutText2")}`,
+    "And this is the third paragraph.dfasdfasdfasdfasdfasdf",
+    
+    
+   ` Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto dignissimos distinctio necessitatibus adipisci recusandae ad iste ullam officiis natus est nemo enim inventore voluptatem nobis dicta iure, eos praesentium dolorem itaque nisi temporibus eum eaque ab fugit? Vero quasi distinctio laboriosam nobis dolores quia. Repudiandae, omnis! Pariatur dolorum itaque suscipit?`
+  ];
   return (
     <div className="about" id="about">
       <h2>{t("about")}</h2>
@@ -35,6 +38,7 @@ const About = () => {
       <p data-aos="fade-up">
         {t("aboutText")}
         {more && <span>{t("aboutText2")}</span>}
+        <ReadMoreButton paragraphs={paragraphs} />
       </p>
       <div className="subLink" data-aos="fade-up">
         <h3
@@ -63,30 +67,6 @@ const About = () => {
           />
         </svg>
       </div>
-
-      {/* <Swiper
-        data-aos="fade-up"
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src={Images} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper> */}
     </div>
   );
 };

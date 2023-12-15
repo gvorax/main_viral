@@ -148,6 +148,20 @@
     }
   }
 }
+.swiper {
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 @keyframes balon {
   0% {

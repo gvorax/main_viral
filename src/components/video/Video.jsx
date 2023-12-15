@@ -4,6 +4,13 @@ import Damas1 from "../../assets/damas1.png";
 import Balon from "../../assets/balon.png";
 import "./video.scss";
 import { t } from "i18next";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import { FreeMode, Navigation, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import  Video1  from "../../assets/video1.mp4";
+import  Video2  from "../../assets/video2.mp4";
 
 const Video = () => {
   return (
@@ -324,16 +331,34 @@ const Video = () => {
           </div>
         </div>
         <div className="video_container">
-          <iframe
-            className="iframe-video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/yvP2c-y4hFI?si=HVc_dTkvb0vpcrIH"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            freeMode={true}
+            // autoplay={{
+            //   delay: 5000,
+            //   disableOnInteraction: false,
+            // }}
+            autoPlay={false}
+            navigation={true}
+            modules={[FreeMode, Navigation, Autoplay]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <video className="bg_video-content" controls autoPlay loop>
+                <source src={Video1} type="video/mp4" />
+                Your browser does not support HTML5 video.
+              </video>
+              
+            </SwiperSlide>
+            <SwiperSlide>
+              <video className="bg_video-content" controls autoplay loop>
+                <source src={Video2} type="video/mp4" />
+                Your browser does not support HTML5 video.
+              </video>
+              
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
       <div className="damas">

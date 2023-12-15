@@ -38,9 +38,7 @@
 html {
   scroll-behavior: smooth;
 }
-.swiper-button-lock{
-  display: block;
-}
+
 
 /* .navbar {
   display: none !important;
@@ -183,6 +181,12 @@ html {
     justify-content: center;
     gap: 50px;
   }
+  .shop h2 {
+    text-align: center;
+    padding: 10px;
+    line-height: 30px;
+    padding-top: 100px;
+  }
 }
 
 /* medium screen  */
@@ -217,6 +221,7 @@ html {
     text-align: center;
     padding: 10px;
     line-height: 30px;
+    padding-top: 100px;
   }
   .property2 img {
     width: 250px;
@@ -227,11 +232,16 @@ html {
   .promotion .container .water_property .property1 .proBox {
     min-width: 300px;
     max-width: 600px;
+    justify-content: center;
+    align-items: center;
   }
   [data-aos^="zoom"][data-aos^="zoom"].aos-animate {
     flex-direction: column;
   }
-
+  .promotion .container .water_property .property1 .proBox p{
+    width: 100%;
+    text-align: center;
+  }
   .delivery .del_box {
     height: auto;
   }
@@ -520,20 +530,10 @@ html {
   .promotion .container .water .water_title h2 {
     font-size: 38px;
   }
-/* 
-  .shop .mtSwiper .swiper-button-prev,
-  .shop .mtSwiper .swiper-button-next {
-    display: none;
-  } */
 
-  .shop .mtSwiper .swiper {
-    width: 100%;
-    padding: 10px;
-  }
 
-  .shop .mtSwiper .swiper-slide {
-    width: 100%;
-  }
+
+ 
 
   [data-aos^="zoom"][data-aos^="zoom"].aos-animate {
     gap: 40px;
@@ -660,22 +660,11 @@ html {
     height: 200px !important;
   }
 
-  .shop .mtSwiper .swiper-slide p {
-    width: 250px;
-  }
+ 
 
-  .shop .mtSwiper .swiper-slide span {
-    width: 240px;
-  }
 
-  .shop .mtSwiper .swiper-slide {
-    width: 300px !important;
-    padding: 20px;
-  }
 
-  .shop .mtSwiper .swiper-slide {
-    width: 300px !important;
-  }
+
 
   .video .video_box .video_title .video_text p {
     width: 260px;
