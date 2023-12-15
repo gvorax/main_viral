@@ -18,6 +18,19 @@ i18n.use(initReactI18next).init({
         aboutText: `Boshqa ishlab chiqaruvchi kompaniyalardan farqli o'laroq Vital Kompaniyasi mijozlar sog'ligi va organizmi uchun foydali bo'ladigan suv ishlab chiqarishda yetakchi kompaniyaligi tasdiqlangan`,
         aboutText2: `
         Vital kompaniyasi nafaqat mazali va foydali suv balki organizmga mutlaqo zararsiz ekologik toza hom-ashyolardan foydalangan holda ishlab chiqarilgan suv kullerlarini ham mijozlarga taqdim etib kelmoqda`,
+        aboutText3: `Bizning Vital suvlarimiz !
+        `,
+        aboutText4: `Suv yer yuzidagi xar bir tirik jonzod uchun eng muxim xayot manbai xisoblanadi. Yer yuzining 70 foizini suv qoplaganligiga qaramay bu suvning 1 foizigina ichimlik suvi xisoblanadi. Biz VITAL kompaniyasi tiriklik manbaini ichimlik suvi sifatida foydalanish uchun ko’plab ishlar olib bordik. Suvlarimiz tog' suvi bo'lganligi va inson aralashuvisiz davom etadigan filtrlash jarayoni suv mazasi va tarkibini butkul havfsiz va foydali bo'lishini ta'minlaydi.  Suvni 9 bosqichli Yapon va Xitoy texnologiyalarida ya’ni to’liq avtomatlashtirilgan filtrlash jarayonlaridan o’tkazib suv tarkibini muvozanatga keltirib suvni yanada mazali qilish uchun tarkibiga asl Zam-Zam suvlarini qo’shamiz. Asl Zam-Zam suvlarini to’g’ridan-to’g’ri Saudia Arabistonidan keltiriladi. Suv ta’mi mazali,  yutumlari esa yumshoqligi bilan ko’plab mijozlarimiz maqtovlarga sazovor bo’lgan.`,
+        aboutText5: `Kompaniyamiz tozalik va sifatga katta etibor qaratgan. Mijozlardan qaytgan kapsulalarni tekshirish jarayonlaridan o’tkazib ishga yaroqsiz kapsulalarni olib tashlanadi. Yaroqli kapsulalarimizni esa   3 xil xaroratda 15 bosqichli tozalash kanveyirlaridan o’tkazamiz va qadoqlash jarayoniga yuboramiz.
+        `,
+        aboutText6: `Suvlarimizni mijozlarimizga tezkor yetkazib berish xizmatlarida yetkazib beramiz. Yetkazib berish xizmatlarimiz xonadoningiz nechanchi qavatda bo’lishan qat’iy nazar eshik tagigacha olib chiqib beriladi.
+        `,
+        aboutText7: `Bizning  Kullerlar !
+        `,
+        aboutText8: `Kompaniyamiz  tomonidan suv uchun kullerlar xam ishlab chiqariladi. Kullerlarning 40 dan ortiq turlari mavjud. Butun O’zbekiston bo’ylab yetkazib berish imkoniga egamiz. Toshkent shaxrida o’zimizning showroomimz o’z ish faoliyatini olib boradi. U yerda kullarlarimiz haqida barcha ma’lumotlarni berib o’tamiz. Kullerlarimiz xam suvimiz kabi ko’plab mijozlarimizga ko’p yillardan buyon xizmat qilib kelmoqda.
+        `,
+        aboutText9: `Kelgusida bu ko’rsatkichlarni yanada ko’paytirib mijozlarimiz ishonchinj oqlashni maqsad qilganmiz!
+        `,
         more: "Ko'proq o'qish",
         less: "Kamroq o'qish",
         forFamily: `  Siz va Yaqinlarigiz Uchun`,
@@ -106,6 +119,17 @@ i18n.use(initReactI18next).init({
         advice: "Бесплатная консультация",
         aboutText: `В отличие от других компаний-производителей, компания «Витал» зарекомендовала себя как ведущая компания по производству воды, полезной для здоровья и организма покупателей.`,
         aboutText2: `Компания «Витал» предлагает покупателям не только вкусную и полезную воду, но и кулеры для воды, изготовленные с использованием экологически чистых ингредиентов, абсолютно безвредных для организма.`,
+        aboutText3: `Наши Жизненные воды!
+        `,
+        aboutText4: `Вода – важнейший источник жизни для каждого живого существа на Земле. Несмотря на то, что 70% поверхности Земли покрыто водой, только 1% этой воды считается питьевой. Мы, компания ВИТАЛ, сделали многое, чтобы использовать источник жизни – питьевую воду. Тот факт, что наши воды являются горными, а непрерывный процесс фильтрации без вмешательства человека гарантирует, что вкус и состав воды полностью безопасны и полезны для здоровья. Мы пропускаем воду через 9-ступенчатую японскую и китайскую технологию, то есть полностью автоматизированные процессы фильтрации, балансируем содержание воды и добавляем оригинальные воды Зам-Зам, чтобы вода была вкуснее. Оригинальную воду Зам-Зам привозят напрямую из Саудовской Аравии. Многие наши клиенты высоко оценили вкус воды и мягкость ее глотков.`,
+        aboutText5: `Наша компания уделяет большое внимание чистоте и качеству. Капсулы, возвращенные от покупателей, проверяются и непригодные для использования капсулы удаляются. Мы пропускаем наши действительные капсулы через 15-ступенчатые конвейеры очистки при 3-х различных температурах и отправляем их в процесс упаковки.
+        `,
+        aboutText6: `Мы доставляем воду нашим клиентам службами экспресс-доставки. Нашими службами доставки осуществляется доставка до вашего порога, независимо от этажа вашей квартиры.`,
+        aboutText7: `Наши Куллеры!
+        `,
+        aboutText8: `Наша компания также производит кулеры для воды. Существует более 40 видов кулеров. Имеем возможность доставки по всему Узбекистану. Наш шоу-рум работает в Ташкенте. Там мы дадим всю информацию о нашем прахе. Наши кулеры, как и наша вода, уже много лет служат многим нашим клиентам.`,
+        aboutText9: `В будущем мы стремимся заслужить доверие наших клиентов, еще больше увеличив эти показатели! `,
+        
         more: "Читать далее",
         less: "Читать меньше",
         forFamily: ` Для вас и ваших близких`,
@@ -195,6 +219,17 @@ i18n.use(initReactI18next).init({
         advice: "Free advice",
         aboutText: ` Unlike other manufacturing companies, Vital Company is proven to be a leading company in the production of water that is beneficial for the health and body of customers.`,
         aboutText2: `The Vital company offers customers not only tasty and healthy water, but also water coolers made using environmentally friendly ingredients that are absolutely harmless to the body.`,
+        aboutText3: `Our Vital waters!
+        `,
+        aboutText4: `Water is the most important source of life for every living thing on earth. Despite the fact that 70% of the earth's surface is covered by water, only 1% of this water is considered drinking water. We VITAL company have done many things to use the source of life as drinking water. The fact that our waters are mountain water and the continuous filtration process without human intervention ensures that the taste and composition of the water is completely safe and healthy. We pass the water through 9-stage Japanese and Chinese technologies, i.e. fully automated filtering processes, balance the water content and add original Zam-Zam waters to make the water tastier. Original Zam-Zam water is brought directly from Saudi Arabia. Many of our customers have praised the taste of the water, and the softness of its sips.`,
+        aboutText5: `Our company pays great attention to cleanliness and quality. Capsules returned from customers are checked and unusable capsules are removed. We pass our valid capsules through 15-step cleaning conveyors at 3 different temperatures and send them to the packaging process.`,
+        aboutText6: `We deliver our waters to our customers in express delivery services. Our delivery services are delivered to your doorstep, regardless of the floor of your apartment.`,
+        aboutText7: `Our Coolers!
+        `,
+        aboutText8: `Our company also produces water coolers. There are more than 40 types of coolers. We are able to deliver throughout Uzbekistan. Our showroom operates in Tashkent. There we will give all the information about our ashes. Our coolers, like our water, have been serving many of our customers for many years.
+        `,
+        aboutText9: `In the future, we aim to earn the trust of our customers by increasing these indicators even more!
+        `,
         more: "Read more",
         less: "Read less",
         forFamily: `For you and your loved ones`,

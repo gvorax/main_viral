@@ -345,14 +345,14 @@ const Video = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <video className="bg_video-content" controls autoPlay loop>
+              <video className="bg_video-content" controls autoPlay muted loop>
                 <source src={Video1} type="video/mp4" />
                 Your browser does not support HTML5 video.
               </video>
               
             </SwiperSlide>
             <SwiperSlide>
-              <video className="bg_video-content" controls autoplay loop>
+              <video className="bg_video-content" controls autoplay loop muted>
                 <source src={Video2} type="video/mp4" />
                 Your browser does not support HTML5 video.
               </video>

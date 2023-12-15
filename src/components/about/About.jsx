@@ -2,19 +2,20 @@ import React from "react";
 import "./about.scss";
 
 import { useTranslation } from "react-i18next";
-import Images from "../../assets/bgInter.jpg";
 import ReadMoreButton from "../../constants/readMore/ReadMore";
 
 const About = () => {
-  const [more, setMore] = React.useState(false);
   const { t } = useTranslation();
   const paragraphs = [
     `${t("aboutText")}`,
     `${t("aboutText2")}`,
-    "And this is the third paragraph.dfasdfasdfasdfasdfasdf",
-    
-    
-   ` Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto dignissimos distinctio necessitatibus adipisci recusandae ad iste ullam officiis natus est nemo enim inventore voluptatem nobis dicta iure, eos praesentium dolorem itaque nisi temporibus eum eaque ab fugit? Vero quasi distinctio laboriosam nobis dolores quia. Repudiandae, omnis! Pariatur dolorum itaque suscipit?`
+    `${t("aboutText3")}`,
+    `${t("aboutText4")}`,
+    `${t("aboutText5")}`,
+    `${t("aboutText6")}`,
+    `${t("aboutText7")}`,
+    `${t("aboutText8")}`,
+    `${t("aboutText9")}`,
   ];
   return (
     <div className="about" id="about">
@@ -36,37 +37,9 @@ const About = () => {
         </svg>
       </span>
       <p data-aos="fade-up">
-        {t("aboutText")}
-        {more && <span>{t("aboutText2")}</span>}
         <ReadMoreButton paragraphs={paragraphs} />
       </p>
-      <div className="subLink" data-aos="fade-up">
-        <h3
-          className="link"
-          onClick={() => {
-            setMore(!more);
-          }}
-        >
-          {" "}
-          {!more ? t("more") : t("less")}{" "}
-        </h3>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="22"
-          height="10"
-          viewBox="0 0 22 10"
-          fill="none"
-        >
-          <path d="M17 1L21 5L17 9M1 5H21H1Z" fill="#F5A93F" />
-          <path
-            d="M17 1L21 5M21 5L17 9M21 5H1"
-            stroke="#F5A93F"
-            strokeWidth="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </div>
+      
     </div>
   );
 };
