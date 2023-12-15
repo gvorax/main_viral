@@ -64,7 +64,7 @@ const About = () => {
         </svg>
       </div>
 
-      <Swiper
+      {/* <Swiper
         data-aos="fade-up"
         spaceBetween={30}
         centeredSlides={true}
@@ -86,7 +86,7 @@ const About = () => {
         <SwiperSlide>Slide 7</SwiperSlide>
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
+      </Swiper> */}
     </div>
   );
 };

@@ -325,6 +325,21 @@ html {
 
 /* small screen  */
 @media screen and (max-width: 576px) {
+
+  .modal .connect h2{
+    font-size: 24px;
+  }
+  .modal .connect p{
+    font-size: 16px;
+  }
+
+  .modal .connect{
+    padding: 15px;
+  }
+  .modal .connect form{
+    gap: 20px;
+  }
+
   .promotion .container .water_property .property1 .proBox {
     justify-content: center !important;
     align-items: center !important;
