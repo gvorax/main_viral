@@ -13,7 +13,7 @@ import Footer from "../footer/Footer";
 import { useTranslation } from "react-i18next";
 
 const Main = ({ setModal, setModal1 }) => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="main" id="home">
       <div className="bg_video">
@@ -22,6 +22,17 @@ const Main = ({ setModal, setModal1 }) => {
           <source src={video} type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
+        {/* <iframe
+          className="bg_video-content"
+          id="video-background"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/2SOBltiw7do?si=tdRqieQoPU75FB1Y"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe> */}
+        
       </div>
       <Navbar />
       <div className="main_content">
@@ -46,17 +57,21 @@ const Main = ({ setModal, setModal1 }) => {
           <h1 data-aos="fade-right">{t("clean")}</h1>
           <div className="main_btns" data-aos="fade-up">
             <Button title={`${t("order")}`} setModal={setModal} />
-            <Button title={`${t("advice")}`} color={"colored"} setModal={setModal1}/>
+            <Button
+              title={`${t("advice")}`}
+              color={"colored"}
+              setModal={setModal1}
+            />
           </div>
         </div>
       </div>
       <About />
       <Promotion />
-      <Shop  setModal={setModal}/>
-      <Delivery setModal={setModal}/>
+      <Shop setModal={setModal} />
+      <Delivery setModal={setModal} />
       <Video />
       <Contact />
-      <Footer  setModal={setModal}/>
+      <Footer setModal={setModal} />
     </div>
   );
 };
