@@ -77,7 +77,7 @@ i18n.use(initReactI18next).init({
         deliveryText: `Suv yetkazib berish xizmatimiz bilan to'g'ridan-to'g'ri
         eshigingizgacha yetkazib beramiz.`,
         freeDel: `Bepul yetkazib berish`,
-        workTime: `24/7 Istalgan vaqtda`,
+        workTime: `Buyurtmangiz 24 soat ichida yetkazamiz`,
         location: `Ostonagacha yetkazish`,
         water: "Vital Suvlariga",
         waterTitle: `Zam Zam`,
@@ -177,7 +177,7 @@ i18n.use(initReactI18next).init({
         deliveryText: `Напрямую с нашей службой доставки воды
         мы доставляем до вашей двери.`,
         freeDel: `Бесплатная доставка`,
-        workTime: `24/7 в любое время`,
+        workTime: `Ваш заказ будет доставлен в течение 24 часов`,
         location: `Доставка до порога`,
         water: "К жизненным водам",
         waterTitle: `Zam Zam`,
@@ -278,7 +278,7 @@ i18n.use(initReactI18next).init({
         deliveryText: `Directly with our water delivery service
         we deliver to your door.`,
         freeDel: `Free shipping`,
-        workTime: `24/7 Anytime`,
+        workTime: `Your order will be delivered within 24 hours`,
         location: `Delivery to the doorstep`,
         water: "Did you know that",
         waterTitle: `Zam Zam`,
