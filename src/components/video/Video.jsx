@@ -348,17 +348,6 @@ const Video = () => {
           </Swiper>
         </div>
       </div>
-      <div className="damas">
-        <div className="damas_main">
-          <img src={Damas1} alt="" />
-          <div className="balon">
-            <img src={Balon} alt="" />
-          </div>
-          <div className="balon balon_second">
-            <img src={Balon} alt="" />
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

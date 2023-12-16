@@ -21,7 +21,7 @@ const Modal = ({ setModal }) => {
   };
   const getWater = async () => {
     if (!!pro_id) {
-      const res = await axios.get("https://selva.zirapcha.uz/api/product/all");
+      const res = await axios.get("https://vital.zirapcha.uz/api/product/all");
 
       let data1 = res.data.data.products.filter(
         (item) => item?.type == "water"

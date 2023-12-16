@@ -44,11 +44,11 @@ i18n.use(initReactI18next).init({
         confirmedTextb: `Mijozlarimiz sog’liqlarini o’ylaymiz! Suvimiz tarkibidagi keraksiz mikroelementlardan tozalash jarayonlarini`,
         confirmedTextb1: `yapon va xitoy texnologiyalarida va albatta to’liq avtomatlashtirilgan texnikalarda bajaramiz.`,
         confirmedTextc: `Ishlab chiqarish va qadoqlash jarayonlari to'la
-        avtomatlashtirilgan va har qanday inson aralashuvidan himoyalangan`,
-        confirmedTextc1: `Ishlab chiqarish va qadoqlash jarayonlari to'la avtomatlashtirilgan va har qanday inson aralashuvidan himoyalangan`,
+        avtomatlashtirilgan va`,
+        confirmedTextc1: ` har qanday inson aralashuvidan himoyalangan`,
         confirmedTextd: `Bizning suv kapsulalarimiz 15 bosqichli tozalash jarayonidan
-        o‘tadi va mijozlarga toza holatda yetkazildi.`,
-        confirmedTextd1: `Bizning suv kapsulalarimiz 15 bosqichli tozalash jarayonidan o‘tadi va mijozlarga toza holatda yetkazildi.`,
+        o‘tadi `,
+        confirmedTextd1: `va mijozlarga toza holatda yetkazildi.`,
         composition: `Suvning tarkibi`,
         motive: `Mijozlarning hayoti haqida o'ylaymiz shuning uchun biz suvga xlor
         qo‘shmaymiz, chunki xlor sog'lig'imizga jiddiy zarar yetkazadi.`,
@@ -143,12 +143,11 @@ i18n.use(initReactI18next).init({
         confirmedTextb: `Мы заботимся о здоровье наших клиентов! Мы используем японские и китайские технологии `,
         confirmedTextb1: `по удалению ненужных микроэлементов из нашей воды и, конечно же, полностью автоматизированное оборудование.`,
         confirmedTextc: `Процессы производства и упаковки завершены.
-        автоматизирован и защищен от любого вмешательства человека`,
-        confirmedTextc1: `Процессы производства и упаковки завершены.
-        автоматизирован и защищен от любого вмешательства человека`,
+        автоматизирован и `,
+        confirmedTextc1: `защищен от любого вмешательства человека`,
         confirmedTextd: `Наши капсулы с водой проходят 15-ступенчатую очистку.
-        сдан и доставлен клиентам в первозданном состоянии.`,
-        confirmedTextd1: `Наши капсулы с водой проходят 15-ступенчатый процесс очистки и доставляются клиентам в первозданном виде.`,
+        сдан и `,
+        confirmedTextd1: `доставлен клиентам в первозданном состоянии.`,
         composition: `Состав воды`,
         motive: `Мы думаем о жизни наших клиентов, поэтому хлорируем воду
         мы его не добавляем, потому что хлор серьезно вредит нашему здоровью.`,
@@ -244,12 +243,11 @@ i18n.use(initReactI18next).init({
         confirmedTextb: `We care about the health of our customers! We use Japanese and Chinese technologies to remove `,
         confirmedTextb1: `unnecessary microelements from our water, and of course, fully automated equipment.`,
         confirmedTextc: `The production and packaging processes are complete
-        automated and protected from any human intervention`,
-        confirmedTextc1: `The production and packaging processes are complete
-        automated and protected from any human intervention`,
+        automated `,
+        confirmedTextc1: `and protected from any human intervention`,
         confirmedTextd: `Our water capsules come from a 15-step purification process
-        passed and delivered to customers in pristine condition.`,
-        confirmedTextd1: `Our water capsules go through a 15-step purification process and are delivered to customers in pristine condition.`,
+        passed and `,
+        confirmedTextd1: `delivered to customers in pristine condition.`,
         composition: `The composition of water`,
         motive: `We think about the lives of our customers, that's why we chlorinate the water
         we do not add it, because chlorine seriously harms our health.`,
