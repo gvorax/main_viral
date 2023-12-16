@@ -9,7 +9,7 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import { FreeMode, Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import  Video1  from "../../assets/video1.mp4";
+import  Video1  from "../../assets/video3.mp4";
 import  Video2  from "../../assets/video2.mp4";
 import ReadMoreButton from "../../constants/readMore/ReadMore";
 
