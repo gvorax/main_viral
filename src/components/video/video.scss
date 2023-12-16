@@ -165,6 +165,25 @@
   justify-content: center;
   align-items: center;
 }
+.swiper-button-prev,
+.swiper-button-next {
+  width: 64px;
+  height: 64px;
+  border: none;
+  border-radius: 50px;
+  background: #f5a93f;
+  color: white;
+  padding: 16px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  position: absolute;
+  font-size: 32px;
+  margin: 16px !important;
+}
 
 @keyframes balon {
   0% {
